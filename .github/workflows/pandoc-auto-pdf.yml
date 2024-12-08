@@ -58,6 +58,7 @@ jobs:
           koma-script
           fancyvrb
           booktabs
+          footnote
 
     - name: Install dependencies
       run: |
