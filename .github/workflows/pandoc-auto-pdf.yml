@@ -56,7 +56,7 @@ jobs:
           hyperref
           fancyhdr
           koma-script
-          xcolor
+          fancyvrb
 
     - name: Install dependencies
       run: |
