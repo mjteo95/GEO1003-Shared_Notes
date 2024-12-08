@@ -57,6 +57,7 @@ jobs:
           fancyhdr
           koma-script
           fancyvrb
+          booktabs
 
     - name: Install dependencies
       run: |
