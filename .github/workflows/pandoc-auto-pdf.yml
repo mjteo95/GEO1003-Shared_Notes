@@ -1,0 +1,28 @@
+name: Pandoc PDF Generation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pandoc:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
+    - name: Generate PDF with Pandoc
+      run: |
+        cd docs
+        bash ./bash/export_notes.sh
+        bash ./bash/export_notes_long.sh
