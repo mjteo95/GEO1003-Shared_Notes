@@ -1,2 +1,3 @@
+pandoc
 mkdocs
 mkdocs-pdf-export-plugin
