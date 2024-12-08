@@ -1,5 +1,9 @@
 # GEO1003 - Shared Notes
 
+## Where to find them
+
+The notes are available at <https://zokszy.github.io/GEO1003-Shared_Notes/>.
+
 ## Planned organization
 
 The main idea is to split the notes in two main documents:
@@ -20,7 +24,6 @@ GEO1003-Shared-Notes/
 │   ├── chapters/       # Folder with the notes
 │   ├── images/         # Folder with the images
 │   ├── pdf/            # Folder with the notes exported as PDF
-│   ├── bash/           # Folder with the scripts to generate the notes
 │   ├── index.md        # Main page of the notes for the website version
 │   ├── metadata.yaml   # Metadata of the notes
 │   └── notes.txt       # Table of contents of the notes
@@ -42,9 +45,17 @@ To contribute to the notes, here are a few rules to follow:
 
 You can look at the chapter [`docs/chapters/example`](docs/chapters/example) to see how the notes should be organized.
 
+## How it works
+
+Whenever changes are pushed to the main branch, the GitHub Actions will automatically:
+
+1. Build the PDF versions of the notes
+2. Build and publish the new version of the notes on the GitHub Pages
+
+The PDF versions are built using Pandoc and the website version is built using MkDocs.
+
 ## TODO
 
 - [ ] Create the outline from the previous years' exams
 - [ ] Decide which sources to focus on
-- [ ] Decide which format to use for the notes
 - [ ] Split sources among participants
