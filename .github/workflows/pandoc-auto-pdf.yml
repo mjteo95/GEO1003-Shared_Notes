@@ -55,6 +55,8 @@ jobs:
           scheme-basic
           hyperref
           fancyhdr
+          koma-script
+          texlive-fonts-recommended
 
     - name: Install dependencies
       run: |
