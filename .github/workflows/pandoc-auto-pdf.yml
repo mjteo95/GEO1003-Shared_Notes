@@ -23,14 +23,22 @@ jobs:
         key: pandoc-$(echo "3.5" | tr -d .)
         restore-keys: |
           pandoc-
-
-    - name: Cache TeX Live
+    - name: Cache TeXLive
       uses: actions/cache@v2
       with:
         path: /usr/share/texlive
         key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
         restore-keys: |
           texlive-
+
+    - name: Download and install the latest Pandoc
+      run: |
+        if [ ! -f /usr/local/bin/pandoc ]; then
+          wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
+          tar xzf pandoc.tar.gz
+          mv pandoc-3.5/bin/pandoc /usr/local/bin/
+          chmod +x /usr/local/bin/pandoc
+        fi
 
     - name: Install dependencies
       run: |
@@ -43,4 +51,4 @@ jobs:
         cd docs
         bash ./bash/export_notes.sh
         bash ./bash/export_notes_long.sh
-      timeout-minutes: 5
+      timeout-minutes: 5  # Increase timeout to accommodate longer execution times
