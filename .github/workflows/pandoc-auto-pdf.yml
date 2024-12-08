@@ -13,63 +13,63 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Cache Pandoc
-      id: cache-pandoc
-      uses: actions/cache@v4
-      with:
-        path: /usr/local/bin/pandoc
-        key: pandoc-$(echo "3.5" | tr -d .)
-        restore-keys: |
-          pandoc-
+      - name: Cache Pandoc
+        id: cache-pandoc
+        uses: actions/cache@v4
+        with:
+          path: /usr/local/bin/pandoc
+          key: pandoc-$(echo "3.5" | tr -d .)
+          restore-keys: |
+            pandoc-
 
-    - if: ${{ steps.cache-pandoc.outputs.cache-hit != 'true' }}
-      name: Download and install the latest Pandoc
-      run: |
-        wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
-        tar xzf pandoc.tar.gz
-        mv pandoc-3.5/bin/pandoc /usr/local/bin/
-        chmod +x /usr/local/bin/pandoc
+      - if: ${{ steps.cache-pandoc.outputs.cache-hit != 'true' }}
+        name: Download and install the latest Pandoc
+        run: |
+          wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
+          tar xzf pandoc.tar.gz
+          mv pandoc-3.5/bin/pandoc /usr/local/bin/
+          chmod +x /usr/local/bin/pandoc
 
-    - name: Setup TeX Live
-      uses: teatimeguest/setup-texlive-action@v3
-      with:
-        packages: |
-          scheme-basic
-          hyperref
-          fancyhdr
-          koma-script
-          fancyvrb
-          booktabs
-          footnote
+      - name: Setup TeX Live
+        uses: teatimeguest/setup-texlive-action@v3
+        with:
+          packages: |
+            scheme-basic
+            hyperref
+            fancyhdr
+            koma-script
+            fancyvrb
+            booktabs
+            footnote
 
-    - name: Install dependencies
-      run: |
-        python3 -m venv .venv
-        source .venv/bin/activate
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
 
-    - name: Generate PDF with Pandoc
-      run: |
-        cd docs
-        bash ./bash/export_notes.sh
-        bash ./bash/export_notes_long.sh
-      timeout-minutes: 5  # Increase timeout to accommodate longer execution times
+      - name: Generate PDF with Pandoc
+        run: |
+          cd docs
+          bash ./bash/export_notes.sh
+          bash ./bash/export_notes_long.sh
+        timeout-minutes: 5 # Increase timeout to accommodate longer execution times
 
-    - name: Set Git user name and email
-      run: |
-        git config --global user.email "136007010+ZokszY@users.noreply.github.com"
-        git config --global user.name "GitHub Actions"
+      - name: Set Git user name and email
+        run: |
+          git config --global user.email "136007010+ZokszY@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
 
-    - name: Add PDF files
-      run: |
-        git add docs/pdf/notes.pdf
-        git add docs/pdf/notes_long.pdf
+      - name: Add PDF files
+        run: |
+          git add docs/pdf/notes.pdf
+          git add docs/pdf/notes_long.pdf
 
-    - name: Commit and push changes
-      if: github.actor != 'GitHub Actions'
-      run: |
-        git commit -m "Automatic: Update PDFs"
-        git push
+      - name: Commit and push changes
+        if: github.actor != 'GitHub Actions'
+        run: |
+          git commit -m "Automatic: Update PDFs"
+          git push
