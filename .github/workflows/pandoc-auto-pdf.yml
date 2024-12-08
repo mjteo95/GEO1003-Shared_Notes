@@ -10,7 +10,7 @@ on:
 
 jobs:
   pandoc:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout code
@@ -27,14 +27,14 @@ jobs:
         fi
 
     - name: Cache Pandoc
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: /usr/local/bin/pandoc
         key: pandoc-$(echo "3.5" | tr -d .)
         restore-keys: |
           pandoc-
     - name: Cache TeXLive
-      uses: actions/cache@v2
+      uses: actions/cache@v4
       with:
         path: /usr/share/texlive
         key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
