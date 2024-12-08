@@ -47,12 +47,51 @@ You can look at the chapter [`docs/chapters/example`](docs/chapters/example) to 
 
 ## How it works
 
+The PDF versions are built using Pandoc and the website version is built using MkDocs.
+
+### Automatic build
+
 Whenever changes are pushed to the main branch, the GitHub Actions will automatically:
 
 1. Build the PDF versions of the notes
 2. Build and publish the new version of the notes on the GitHub Pages
 
-The PDF versions are built using Pandoc and the website version is built using MkDocs.
+This process takes a few minutes, so if your changes are not directly visible on the website, this is normal.
+
+### Local build
+
+You can also build the notes locally. However, the versions used online will be the ones built by the GitHub Actions.
+
+To build the notes locally, you can follow these steps:
+
+1. Clone the repo with:
+
+    ```bash
+    git clone git@github.com:ZokszY/GEO1003-Shared_Notes.git
+    ```
+
+2. Create a Python virtual environment and install the requirements:
+
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+3. Export the notes as PDF (these commands require bash):
+
+    ```bash
+    cd docs
+    bash bash/export_notes.sh
+    bash bash/export_notes-long.sh
+    ```
+
+4. Run the website version locally:
+
+    ```bash
+    cd ..
+    mkdocs serve --open
+    ```
 
 ## TODO
 
