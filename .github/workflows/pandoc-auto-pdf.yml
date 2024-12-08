@@ -69,7 +69,7 @@ jobs:
         git add docs/pdf/notes_long.pdf
 
     - name: Commit and push changes
-      if: ${{ !contains(github.event.head_commit.id, github.sha) }}
+      if: github.actor != 'GitHub Actions'
       run: |
         git commit -m "Automatic: Update PDFs"
         git push
