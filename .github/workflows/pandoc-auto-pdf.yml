@@ -21,8 +21,7 @@ jobs:
         wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-arm64.tar.gz -O pandoc.tar.gz
         tar xzf pandoc.tar.gz
         mv pandoc-*/bin/pandoc /usr/local/bin/
-        mv pandoc-*/bin/pandoc-citeproc /usr/local/bin/
-        chmod +x /usr/local/bin/pandoc /usr/local/bin/pandoc-citeproc
+        chmod +x /usr/local/bin/pandoc
         pandoc --version
 
     - name: Install dependencies
