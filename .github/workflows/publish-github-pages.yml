@@ -13,18 +13,9 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
-      - name: Deploy short notes
+      - name: Deploy notes
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: https://zokszy.github.io/GEO1003-Shared_Notes/short/
           CONFIG_FILE: mkdocs.yml
-          REQUIREMENTS: requirements.txt
-
-      - name: Deploy long notes
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: https://zokszy.github.io/GEO1003-Shared_Notes/long/
-          CONFIG_FILE: mkdocs-long.yml
           REQUIREMENTS: requirements.txt
