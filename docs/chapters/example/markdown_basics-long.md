@@ -11,6 +11,34 @@ On VS Code, there are some nice extensions that can help you write Markdown file
 
 Feel free to ask me if you have questions about Markdown.
 
+### Headers
+  
+```markdown
+# Level 1
+
+## Level 2
+
+### Level 3
+
+#### Level 4
+
+##### Level 5
+
+###### Level 6
+```
+
+# Level 1
+
+## Level 2
+
+### Level 3
+
+#### Level 4
+
+##### Level 5
+
+###### Level 6
+
 ### Bold and Italic
 
 ```markdown
