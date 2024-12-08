@@ -22,7 +22,7 @@ jobs:
         tar xzf pandoc.tar.gz
         mv pandoc-3.5/bin/pandoc /usr/local/bin/
         chmod +x /usr/local/bin/pandoc
-        pandoc --version
+        sudo apt install texlive-xetex texlive-fonts-recommended
 
     - name: Install dependencies
       run: |
