@@ -4,15 +4,6 @@ theme:
   features:
     - navigation.instant
 
-# markdown_extensions:
-#   - pymdownx.superfences
-#   - codehilite:
-#       guess_lang: false
-#   - attr_list
-
-# extra_css:
-#   - css/custom.css
-
 # Define navigation and documentation structure
 nav:
   - "chapters/intro.md"
