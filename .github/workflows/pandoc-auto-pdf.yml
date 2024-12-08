@@ -55,7 +55,7 @@ jobs:
         run: |
           cd docs
           bash ./bash/export_notes.sh
-          bash ./bash/export_notes_long.sh
+          bash ./bash/export_notes-long.sh
         timeout-minutes: 5 # Increase timeout to accommodate longer execution times
 
       - name: Set Git user name and email

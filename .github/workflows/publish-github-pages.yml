@@ -1,9 +1,11 @@
 name: Publish notes via GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows:
+      - Pandoc PDF Generation
+    types:
+      - completed
 
 jobs:
   build:

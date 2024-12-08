@@ -16,7 +16,7 @@ while IFS= read -r line; do
 done < "$input_file"
 
 # Run Pandoc with the modified list of files
-pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes_long.pdf --metadata-file=metadata.yaml --toc --pdf-engine=pdflatex $(cat "$temp_file")
+pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --metadata-file=metadata.yaml --toc --pdf-engine=pdflatex $(cat "$temp_file")
 
 # Clean up the temporary file
 rm "$temp_file"
