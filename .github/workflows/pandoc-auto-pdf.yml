@@ -66,7 +66,7 @@ jobs:
       - name: Add PDF files
         run: |
           git add docs/pdf/notes.pdf
-          git add docs/pdf/notes_long.pdf
+          git add docs/pdf/notes-long.pdf
 
       - name: Commit and push changes
         if: github.actor != 'GitHub Actions'
