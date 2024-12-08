@@ -58,9 +58,18 @@ jobs:
         bash ./bash/export_notes_long.sh
       timeout-minutes: 5  # Increase timeout to accommodate longer execution times
 
-    - name: Add the documents to git
+    - name: Set Git user name and email
+      run: |
+        git config --global user.email "136007010+ZokszY@users.noreply.github.com"
+        git config --global user.name "GitHub Actions"
+
+    - name: Add PDF files
       run: |
         git add docs/pdf/notes.pdf
         git add docs/pdf/notes_long.pdf
+
+    - name: Commit and push changes
+      if: ${{ !contains(github.event.head_commit.id, github.sha) }}
+      run: |
         git commit -m "Automatic: Update PDFs"
         git push
