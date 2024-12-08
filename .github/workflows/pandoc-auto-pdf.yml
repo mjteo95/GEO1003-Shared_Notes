@@ -18,7 +18,7 @@ jobs:
 
     - name: Download and install the latest Pandoc
       run: |
-        wget https://github.com/jgm/pandoc/releases/latest/download/pandoc-$(uname)-x86_64.tar.gz -O pandoc.tar.gz
+        wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-arm64.tar.gz -O pandoc.tar.gz
         tar xzf pandoc.tar.gz
         mv pandoc-*/bin/pandoc /usr/local/bin/
         mv pandoc-*/bin/pandoc-citeproc /usr/local/bin/
