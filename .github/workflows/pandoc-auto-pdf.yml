@@ -18,8 +18,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc
+        python3 -m venv .venv
+        source .venv/bin/activate
+        pip install -r requirements.txt
 
     - name: Generate PDF with Pandoc
       run: |

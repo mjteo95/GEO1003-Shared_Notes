@@ -40,7 +40,7 @@ To contribute to the notes, here are a few rules to follow:
 4. Images should be in the `docs/images/` folder
 5. When adding a new section, update the `docs/notes.txt` file to include it to the whole document. You can also
 
-You can look at the chapter [`docs/example`](docs/example) to see how the notes should be organized.
+You can look at the chapter [`docs/chapters/example`](docs/chapters/example) to see how the notes should be organized.
 
 ## TODO
 
