@@ -25,14 +25,14 @@ jobs:
         restore-keys: |
           pandoc-
 
-    - name: Cache TeXLive
-      id: cache-texlive
-      uses: actions/cache@v4
-      with:
-        path: /usr/share/texlive
-        key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
-        restore-keys: |
-          texlive-
+    # - name: Cache TeXLive
+    #   id: cache-texlive
+    #   uses: actions/cache@v4
+    #   with:
+    #     path: /usr/share/texlive
+    #     key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
+    #     restore-keys: |
+    #       texlive-
 
     - if: ${{ steps.cache-pandoc.outputs.cache-hit != 'true' }}
       name: Download and install the latest Pandoc
@@ -42,11 +42,19 @@ jobs:
         mv pandoc-3.5/bin/pandoc /usr/local/bin/
         chmod +x /usr/local/bin/pandoc
 
-    - if: ${{ steps.cache-texlive.outputs.cache-hit != 'true' }}
-      name: Install TeXLive
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y texlive-xetex texlive-fonts-recommended
+    # - if: ${{ steps.cache-texlive.outputs.cache-hit != 'true' }}
+    #   name: Install TeXLive
+    #   run: |
+    #     sudo apt-get update
+    #     sudo apt-get install -y texlive-xetex texlive-fonts-recommended
+
+    - name: Setup TeX Live
+      uses: teatimeguest/setup-texlive-action@v3
+      with:
+        packages: |
+          scheme-basic
+          hyperref
+          fancyhdr
 
     - name: Install dependencies
       run: |
