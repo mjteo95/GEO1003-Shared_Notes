@@ -45,6 +45,8 @@ To contribute to the notes, here are a few rules to follow:
 
 You can look at the chapter [`docs/chapters/example`](docs/chapters/example) to see how the notes should be organized.
 
+If you don't know Markdown, you can look at the section [**Example/Markdown Basics**](https://zokszy.github.io/GEO1003-Shared_Notes/chapters/example/markdown_basics/) in the notes for a small introduction.
+
 ## How it works
 
 The PDF versions are built using Pandoc and the website version is built using MkDocs.
