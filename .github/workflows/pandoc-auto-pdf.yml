@@ -16,11 +16,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Download and install the latest Pandoc
+      run: |
+        wget https://github.com/jgm/pandoc/releases/latest/download/pandoc-$(uname)-x86_64.tar.gz -O pandoc.tar.gz
+        tar xzf pandoc.tar.gz
+        mv pandoc-*/bin/pandoc /usr/local/bin/
+        mv pandoc-*/bin/pandoc-citeproc /usr/local/bin/
+        chmod +x /usr/local/bin/pandoc /usr/local/bin/pandoc-citeproc
+        pandoc --version
+
     - name: Install dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc
-        pandoc --version
         python3 -m venv .venv
         source .venv/bin/activate
         pip install -r requirements.txt
