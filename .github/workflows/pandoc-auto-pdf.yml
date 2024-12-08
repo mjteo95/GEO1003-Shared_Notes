@@ -16,30 +16,37 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Download and install the latest Pandoc
-      run: |
-        if [ ! -f /usr/local/bin/pandoc ]; then
-          wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
-          tar xzf pandoc.tar.gz
-          mv pandoc-3.5/bin/pandoc /usr/local/bin/
-          chmod +x /usr/local/bin/pandoc
-          sudo apt-get install texlive-xetex texlive-fonts-recommended
-        fi
-
     - name: Cache Pandoc
+      id: cache-pandoc
       uses: actions/cache@v4
       with:
         path: /usr/local/bin/pandoc
         key: pandoc-$(echo "3.5" | tr -d .)
         restore-keys: |
           pandoc-
+
     - name: Cache TeXLive
+      id: cache-texlive
       uses: actions/cache@v4
       with:
         path: /usr/share/texlive
         key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
         restore-keys: |
           texlive-
+
+    - if: ${{ steps.cache-pandoc.outputs.cache-hit != 'true' }}
+      name: Download and install the latest Pandoc
+      run: |
+        wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
+        tar xzf pandoc.tar.gz
+        mv pandoc-3.5/bin/pandoc /usr/local/bin/
+        chmod +x /usr/local/bin/pandoc
+
+    - if: ${{ steps.cache-texlive.outputs.cache-hit != 'true' }}
+      name: Install TeXLive
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive texlive-xetex texlive-fonts-recommended
 
     - name: Install dependencies
       run: |
