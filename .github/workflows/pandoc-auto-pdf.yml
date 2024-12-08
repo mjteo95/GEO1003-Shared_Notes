@@ -16,6 +16,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Download and install the latest Pandoc
+      run: |
+        if [ ! -f /usr/local/bin/pandoc ]; then
+          wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
+          tar xzf pandoc.tar.gz
+          mv pandoc-3.5/bin/pandoc /usr/local/bin/
+          chmod +x /usr/local/bin/pandoc
+          sudo apt-get install texlive-xetex texlive-fonts-recommended
+        fi
+
     - name: Cache Pandoc
       uses: actions/cache@v2
       with:
@@ -30,15 +40,6 @@ jobs:
         key: texlive-$(md5sum /etc/lsb-release | cut -d' ' -f1)
         restore-keys: |
           texlive-
-
-    - name: Download and install the latest Pandoc
-      run: |
-        if [ ! -f /usr/local/bin/pandoc ]; then
-          wget https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz -O pandoc.tar.gz
-          tar xzf pandoc.tar.gz
-          mv pandoc-3.5/bin/pandoc /usr/local/bin/
-          chmod +x /usr/local/bin/pandoc
-        fi
 
     - name: Install dependencies
       run: |
