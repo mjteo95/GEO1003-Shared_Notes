@@ -100,13 +100,14 @@ Ordered list:
 ### Blockquotes
 
 ```markdown
-> This is a blockquote.```
+> This is a blockquote.
+```
 
 > This is a blockquote.
 
 ### Code
 
-```markdown
+````markdown
 Inline code: `print("Hello, World!")`
 
 Code block:
@@ -115,8 +116,7 @@ Code block:
 def hello_world():
     print("Hello, World!")
 ```
-
-```
+````
 
 Inline code: `print("Hello, World!")`
 
@@ -130,11 +130,15 @@ def hello_world():
 ### Tables
 
 ```markdown
+Table: A simple table
+
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
 ```
+
+Table: A simple table
 
 | Header 1 | Header 2 |
 | -------- | -------- |

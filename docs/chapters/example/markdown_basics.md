@@ -130,11 +130,15 @@ def hello_world():
 ### Tables
 
 ```markdown
+Table: A simple table
+
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
 ```
+
+Table: A simple table
 
 | Header 1 | Header 2 |
 | -------- | -------- |
