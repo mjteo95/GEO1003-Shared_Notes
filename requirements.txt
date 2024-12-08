@@ -1,2 +1,5 @@
 mkdocs
 mkdocs-pdf-export-plugin
+mkdocs-material
+mkdocs-caption
+mdx_truly_sane_lists

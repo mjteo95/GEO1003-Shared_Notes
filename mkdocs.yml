@@ -1,15 +1,29 @@
 site_name: GEO1003 - Shared Notes
 theme:
-  name: readthedocs
+  name: material
   features:
     - navigation.instant
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - mdx_truly_sane_lists
+
+plugins:
+  - caption
 
 # Define navigation and documentation structure
 nav:
   - "chapters/intro.md"
   - Chapters:
-    - "Examples":
-      - "chapters/example/intro.md"
-      - "chapters/example/markdown_basics.md"
-      - "chapters/example/empty_section.md"
+    - Examples:
+      - Introduction: "chapters/example/intro.md"
+      - Mardown Basics: "chapters/example/markdown_basics.md"
+      - Empty Section: "chapters/example/empty_section.md"
 

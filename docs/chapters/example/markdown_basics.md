@@ -9,9 +9,13 @@
 
 ### Lists
 
+Unordered list:
+
 - Unordered list item 1
 - Unordered list item 2
   - Nested unordered list item
+
+Ordered list:
 
 1. Ordered list item 1
 2. Ordered list item 2
@@ -23,7 +27,7 @@
 
 ### Images
 
-![Example image](../../images/example.jpg){ width=250px }
+![Example image](../../images/example.jpg){ width="250" }
 
 ### Blockquotes
 

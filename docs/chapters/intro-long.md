@@ -1,3 +1,3 @@
 # Introduction
 
-This is the introduction to the book.
+This is the introduction to the notes.
