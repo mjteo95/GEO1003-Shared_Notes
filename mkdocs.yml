@@ -28,14 +28,14 @@ nav:
         - Introduction: "chapters/example/intro.md"
         - Mardown Basics: "chapters/example/markdown_basics.md"
         - Empty Section: "chapters/example/empty_section.md"
-      - Exams Overview: "chapters/exams_overview.md"
+    - Exams Overview: "chapters/exams_overview.md"
     - PDF version: "pdf/notes.pdf"
   - Long version:
-    - "chapters/intro-long.md"
+    - "chapters/intro.md"
     - Chapters:
       - Example:
-        - Introduction: "chapters/example/intro-long.md"
-        - Mardown Basics: "chapters/example/markdown_basics-long.md"
+        - Introduction: "chapters/example/intro.md"
+        - Mardown Basics: "chapters/example/markdown_basics.md"
         - Empty Section: "chapters/example/empty_section-long.md"
-      - Exams Overview: "chapters/exams_overview.md"
+    - Exams Overview: "chapters/exams_overview.md"
     - PDF version: "pdf/notes-long.pdf"
