@@ -22,7 +22,7 @@ plugins:
 # Define navigation and documentation structure
 nav:
   - Concise version:
-    - "chapters/intro.md"
+    - Introduction: "chapters/intro.md"
     - Chapters:
       - Example:
         - Introduction: "chapters/example/intro.md"
@@ -31,11 +31,11 @@ nav:
     - Exams Overview: "chapters/exams_overview.md"
     - PDF version: "pdf/notes.pdf"
   - Long version:
-    - "chapters/intro.md"
+    - Introduction: "chapters/intro.md"
     - Chapters:
       - Example:
         - Introduction: "chapters/example/intro.md"
         - Mardown Basics: "chapters/example/markdown_basics.md"
-        - Empty Section: "chapters/example/empty_section-long.md"
+        - Empty Section (Long): "chapters/example/empty_section-long.md"
     - Exams Overview: "chapters/exams_overview.md"
-    - PDF version: "pdf/notes-long.pdf"
+    - PDF version (Long): "pdf/notes-long.pdf"
