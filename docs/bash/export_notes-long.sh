@@ -12,6 +12,9 @@ while IFS= read -r line; do
     base_name="${line%.*}"    
     # Create the modified filename
     modified_line="${base_name}-long.md"
+    if [[ ! -e "$modified_line" ]]; then
+        modified_line="${base_name}.md"
+    fi
     echo "$modified_line" >> "$temp_file"
 done < "$input_file"
 
