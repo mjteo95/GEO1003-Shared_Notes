@@ -2,7 +2,7 @@
 
 ## Where to find them
 
-The notes are available at <https://zokszy.github.io/GEO1003-Shared_Notes/>. The PDF versions are available from the website and in the repo in the [`pdf/`](pdf) folder.
+The notes are available at <https://zokszy.github.io/GEO1003-Shared_Notes/>. The PDF versions are available from the website and in the repo in the [`docs/pdf/`](docs/pdf) folder.
 
 ## How to contribute
 
