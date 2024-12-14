@@ -20,22 +20,22 @@ plugins:
   - caption
 
 # Define navigation and documentation structure
+# This part is automatically updated using docs/notes.txt
+# Do not edit this part manually: it will be overwritten
 nav:
   - Concise version:
     - Introduction: "chapters/intro.md"
-    - Chapters:
-      - Example:
-        - Introduction: "chapters/example/intro.md"
-        - Mardown Basics: "chapters/example/markdown_basics.md"
-        - Empty Section: "chapters/example/empty_section.md"
+    - Example:
+      - Introduction: "chapters/example/intro.md"
+      - Markdown Basics: "chapters/example/markdown_basics.md"
+      - Empty Section: "chapters/example/empty_section.md"
     - Exams Overview: "chapters/exams_overview.md"
     - PDF version: "pdf/notes.pdf"
   - Long version:
     - Introduction: "chapters/intro-long.md"
-    - Chapters:
-      - Example:
-        - Introduction: "chapters/example/intro-long.md"
-        - Mardown Basics: "chapters/example/markdown_basics-long.md"
-        - Empty Section (Long): "chapters/example/empty_section-long.md"
+    - Example:
+      - Introduction: "chapters/example/intro-long.md"
+      - Markdown Basics: "chapters/example/markdown_basics-long.md"
+      - Empty Section: "chapters/example/empty_section-long.md"
     - Exams Overview: "chapters/exams_overview-long.md"
-    - PDF version (Long): "pdf/notes-long.pdf"
+    - PDF version: "pdf/notes-long.pdf"

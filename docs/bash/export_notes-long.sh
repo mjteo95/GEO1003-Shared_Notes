@@ -33,17 +33,10 @@ input_file="notes.txt"
 # Temporary file to store the modified list
 temp_file=$(mktemp)
 
-# # Define the folder for generated files
-# output_folder="generated_files"
-
-# # Create the folder if it doesn't already exist
-# mkdir -p "$output_folder"
-
 # Process each line in the input file
 while IFS= read -r filename || [[ -n "$filename" ]]; do
     # Extract the base name and the extension
     base_name="${filename%.*}"
-    echo $base_name
     # Create the modified filename
     long_filename="${base_name}-long.md"
     write_long=false
@@ -56,7 +49,6 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
             first_line=$(head -n 1 "$long_filename")
             if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
                 {
-                    echo "File $filename starts with the specified comment."
                     write_long=true
                 }
             fi
@@ -66,7 +58,6 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
     if $write_long; then
         {
             # Add comments to indicate automatic generation and source
-
             box_width=60
             padding=4
             max_row_length=$((box_width - 2 * padding))
@@ -101,3 +92,5 @@ pandoc --from=markdown+rebase_relative_paths -s -o pdf/notes-long.pdf --metadata
 
 # Clean up the temporary file
 rm "$temp_file"
+
+echo "Long Markdown and PDF versions generated successfully!"
