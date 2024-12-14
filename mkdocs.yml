@@ -24,18 +24,18 @@ plugins:
 # Do not edit this part manually: it will be overwritten
 nav:
   - Concise version:
-    - Introduction: "chapters/intro.md"
+    - Introduction: "content/intro.md"
     - Example:
-      - Introduction: "chapters/example/intro.md"
-      - Markdown Basics: "chapters/example/markdown_basics.md"
-      - Empty Section: "chapters/example/empty_section.md"
-    - Exams Overview: "chapters/exams_overview.md"
+      - Introduction: "content/example/intro.md"
+      - Markdown Basics: "content/example/markdown_basics.md"
+      - Empty Section: "content/example/empty_section.md"
+    - Exams Overview: "content/exams_overview.md"
     - PDF version: "pdf/notes.pdf"
   - Long version:
-    - Introduction: "chapters/intro-long.md"
+    - Introduction: "content/intro-long.md"
     - Example:
-      - Introduction: "chapters/example/intro-long.md"
-      - Markdown Basics: "chapters/example/markdown_basics-long.md"
-      - Empty Section: "chapters/example/empty_section-long.md"
-    - Exams Overview: "chapters/exams_overview-long.md"
+      - Introduction: "content/example/intro-long.md"
+      - Markdown Basics: "content/example/markdown_basics-long.md"
+      - Empty Section: "content/example/empty_section-long.md"
+    - Exams Overview: "content/exams_overview-long.md"
     - PDF version: "pdf/notes-long.pdf"
