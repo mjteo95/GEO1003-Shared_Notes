@@ -31,11 +31,11 @@ nav:
     - Exams Overview: "chapters/exams_overview.md"
     - PDF version: "pdf/notes.pdf"
   - Long version:
-    - Introduction: "chapters/intro.md"
+    - Introduction: "chapters/intro-long.md"
     - Chapters:
       - Example:
-        - Introduction: "chapters/example/intro.md"
-        - Mardown Basics: "chapters/example/markdown_basics.md"
+        - Introduction: "chapters/example/intro-long.md"
+        - Mardown Basics: "chapters/example/markdown_basics-long.md"
         - Empty Section (Long): "chapters/example/empty_section-long.md"
-    - Exams Overview: "chapters/exams_overview.md"
+    - Exams Overview: "chapters/exams_overview-long.md"
     - PDF version (Long): "pdf/notes-long.pdf"
