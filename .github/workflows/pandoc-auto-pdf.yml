@@ -59,16 +59,13 @@ jobs:
 
       - name: Set Git user name and email
         run: |
-          git config --global user.email "136007010+ZokszY@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
 
-      - name: Add PDF files
+      - name: Add, commit and push changes
+        if: github.actor != 'GitHub Actions'
         run: |
           git add docs/pdf/notes.pdf
           git add docs/pdf/notes-long.pdf
-
-      - name: Commit and push changes
-        if: github.actor != 'GitHub Actions'
-        run: |
-          git commit -m "Automatic: Update PDFs"
+          git commit -m "Automatic: Update PDFs" || echo "No changes to commit"
           git push

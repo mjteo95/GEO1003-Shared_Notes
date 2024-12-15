@@ -28,7 +28,10 @@ markdown_extensions:
   - mdx_truly_sane_lists
 
 plugins:
-  - git-authors
+  # - git-authors
+  - git-committers:
+      repository: ZokszY/GEO1003-Shared_Notes
+      branch: main
   - search
   - caption
 
