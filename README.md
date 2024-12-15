@@ -6,6 +6,8 @@ The notes are available at <https://zokszy.github.io/GEO1003-Shared_Notes/>. The
 
 ## How to contribute
 
+To select a part of the reader to take notes, look and fill the table here: <https://tud365-my.sharepoint.com/:x:/r/personal/abry_tudelft_nl/Documents/GEO1003-Shared_Notes-Repartition.xlsx?d=w341fac81b9764163a339d730ea629f23&csf=1&web=1&e=q98ee1>.
+
 To contribute to the notes, here are a few rules to follow:
 
 1. Organize the notes in the [`docs/content/`](docs/content/) folder in **chapters**:
