@@ -1,8 +1,20 @@
 site_name: GEO1003 - Shared Notes
 theme:
   name: material
+  language: en
   features:
     - navigation.instant
+    - content.action.edit
+    - content.action.view
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+
+
+repo_url: https://github.com/ZokszY/GEO1003-Shared_Notes
+docs_dir: docs
+edit_uri: edit/main/docs/
 
 markdown_extensions:
   - attr_list
@@ -16,6 +28,7 @@ markdown_extensions:
   - mdx_truly_sane_lists
 
 plugins:
+  - git-authors
   - search
   - caption
 
