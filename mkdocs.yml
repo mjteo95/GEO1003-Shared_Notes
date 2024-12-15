@@ -20,22 +20,30 @@ plugins:
   - caption
 
 # Define navigation and documentation structure
-# This part is automatically updated using docs/notes.txt
+# This part is automatically updated using docs/notes.txt and docs/books.txt
 # Do not edit this part manually: it will be overwritten
 nav:
-  - Concise version:
-    - Introduction: "content/intro.md"
+  - Concise notes:
+    - Introduction: "content/notes/intro.md"
     - Example:
-      - Introduction: "content/example/intro.md"
-      - Markdown Basics: "content/example/markdown_basics.md"
-      - Empty Section: "content/example/empty_section.md"
-    - Exams Overview: "content/exams_overview.md"
+      - Introduction: "content/notes/example/intro.md"
+      - Markdown Basics: "content/notes/example/markdown_basics.md"
+      - Empty Section: "content/notes/example/empty_section.md"
     - PDF version: "pdf/notes.pdf"
-  - Long version:
-    - Introduction: "content/intro-long.md"
+  - Long notes:
+    - Introduction: "content/notes/intro-long.md"
     - Example:
-      - Introduction: "content/example/intro-long.md"
-      - Markdown Basics: "content/example/markdown_basics-long.md"
-      - Empty Section: "content/example/empty_section-long.md"
-    - Exams Overview: "content/exams_overview-long.md"
+      - Introduction: "content/notes/example/intro-long.md"
+      - Markdown Basics: "content/notes/example/markdown_basics-long.md"
+      - Empty Section: "content/notes/example/empty_section-long.md"
     - PDF version: "pdf/notes-long.pdf"
+  - Exams overview: content/exams_overview.md
+  - Books notes:
+    - Tiberius - 2022 - Surveying and Mapping:
+      - 12 - Introduction: "content/books/tiberius/12-intro.md"
+      - 13 - Ranging: "content/books/tiberius/13-ranging.md"
+      - 14 - Positioning: "content/books/tiberius/14-positioning.md"
+      - 15 - GPS positioning modes: "content/books/tiberius/15-gps_positioning_modes.md"
+      - 16 - GNSS and applications: "content/books/tiberius/16-gnss_and_applications.md"
+    - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview:
+      - 1 - Introduction: "content/books/shixiong_xia/notes.md"

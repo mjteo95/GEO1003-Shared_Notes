@@ -1,6 +1,5 @@
-content/intro.md
-content/example/title.md
-content/example/intro.md
-content/example/markdown_basics.md
-content/example/empty_section.md
-content/exams_overview.md
+content/notes/intro.md
+content/notes/example/title.md
+content/notes/example/intro.md
+content/notes/example/markdown_basics.md
+content/notes/example/empty_section.md
