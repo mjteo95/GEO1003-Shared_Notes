@@ -38,21 +38,23 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
     # Extract the base name and the extension
     base_name="${filename%.*}"
     # Create the modified filename
-    long_filename="${base_name}-long.md"
+    filename_long="${base_name}-long.md"
     write_long=false
-    if [[ ! -f "$long_filename" ]]; then
-        {
-            write_long=true
-        }
+    if [[ ! -f "$filename_long" ]]; then
+        write_long=true
+        echo "File '$filename_long' does not exist. Creating it..."
     else
-        {
-            first_line=$(head -n 1 "$long_filename")
-            if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
-                {
-                    write_long=true
-                }
+        # Check if the file was automatically generated
+        first_line=$(head -n 1 "$filename_long")
+        if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
+            # Check if the source file is newer
+            if [ "$filename" -nt "$destination_file" ]; then
+                write_long=true
+                echo "Source file '$filename' is newer. Updating '$filename_long'..."
+            else
+                echo "Source file '$filename' is older. No need to update '$filename_long'."
             fi
-        }
+        fi
     fi
 
     if $write_long; then
@@ -81,9 +83,9 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
 
             # Append the original file's content
             cat "$filename"
-        } >"$long_filename"
+        } >"$filename_long"
     fi
-    echo "$long_filename" >>"$temp_file"
+    echo "$filename_long" >>"$temp_file"
 done <"$input_file"
 
 # Run Pandoc with the modified list of files
