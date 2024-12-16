@@ -48,7 +48,7 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
         first_line=$(head -n 1 "$filename_long")
         if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
             # Check if the source file is newer
-            if [ "$filename" -nt "$destination_file" ]; then
+            if [ "$filename" -nt "$filename_long" ]; then
                 write_long=true
                 echo "Source file '$filename' is newer. Updating '$filename_long'..."
             else
