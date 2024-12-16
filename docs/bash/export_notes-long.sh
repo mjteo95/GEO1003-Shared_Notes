@@ -47,6 +47,10 @@ while IFS= read -r filename || [[ -n "$filename" ]]; do
         # Check if the file was automatically generated
         first_line=$(head -n 1 "$filename_long")
         if [[ "$first_line" == "<!--AUTOMATICALLY GENERATED" ]]; then
+            mod_date=$(stat -c %y "$filename")
+            echo "Last modification date of $filename:      $mod_date"
+            mod_date_long=$(stat -c %y "$filename_long")
+            echo "Last modification date of $filename_long: $mod_date_long"
             # Check if the source file is newer
             if [ "$filename" -nt "$filename_long" ]; then
                 write_long=true
