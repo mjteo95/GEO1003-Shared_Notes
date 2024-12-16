@@ -22,6 +22,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+  features:
+    - content.action.edit
+    - content.action.view
   icon:
     repo: fontawesome/brands/github
     edit: material/pencil 
