@@ -1,0 +1,5 @@
+content/notes/intro.md
+content/notes/example/title.md
+content/notes/example/intro.md
+content/notes/example/markdown_basics.md
+content/notes/example/empty_section.md
