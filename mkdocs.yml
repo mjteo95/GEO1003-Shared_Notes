@@ -67,6 +67,18 @@ nav:
       - Introduction: "content/notes/example/intro.md"
       - Markdown Basics: "content/notes/example/markdown_basics.md"
       - Empty Section: "content/notes/example/empty_section.md"
+    - How does GNSS work?:
+      - Introduction: "content/notes/how_does_gnss_work/intro.md"
+    - GNSS performance:
+      - Introduction: "content/notes/gnss_performance/intro.md"
+    - GNSS in the built environment (outdoor, indoor and in between):
+      - Introduction: "content/notes/gnss_built_environment/intro.md"
+    - CRS:
+      - Introduction: "content/notes/crs/intro.md"
+    - Wi-Fi-monitoring / Fingerprinting:
+      - Introduction: "content/notes/wifi/intro.md"
+    - Location awareness and privacy:
+      - Introduction: "content/notes/privacy/intro.md"
     - PDF version: "pdf/notes.pdf"
   - Long notes:
     - Introduction: "content/notes/intro-long.md"
@@ -74,6 +86,18 @@ nav:
       - Introduction: "content/notes/example/intro-long.md"
       - Markdown Basics: "content/notes/example/markdown_basics-long.md"
       - Empty Section: "content/notes/example/empty_section-long.md"
+    - How does GNSS work?:
+      - Introduction: "content/notes/how_does_gnss_work/intro-long.md"
+    - GNSS performance:
+      - Introduction: "content/notes/gnss_performance/intro-long.md"
+    - GNSS in the built environment (outdoor, indoor and in between):
+      - Introduction: "content/notes/gnss_built_environment/intro-long.md"
+    - CRS:
+      - Introduction: "content/notes/crs/intro-long.md"
+    - Wi-Fi-monitoring / Fingerprinting:
+      - Introduction: "content/notes/wifi/intro-long.md"
+    - Location awareness and privacy:
+      - Introduction: "content/notes/privacy/intro-long.md"
     - PDF version: "pdf/notes-long.pdf"
   - Exams overview: content/exams_overview.md
   - Books notes:
