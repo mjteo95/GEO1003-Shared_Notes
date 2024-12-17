@@ -58,6 +58,7 @@ plugins:
       enable_creation_date: true
   - search
   - caption
+  - glightbox
 
 # Define navigation and documentation structure
 # This part is automatically updated using docs/notes.txt and docs/books.txt
