@@ -82,8 +82,20 @@ nav:
       - Empty Section: "content/notes/example/empty_section.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro.md"
+      - GPS segments: "content/notes/how_does_gnss_work/segments.md"
+      - Radio Signal: "content/notes/how_does_gnss_work/signal.md"
+      - Initialisation: "content/notes/how_does_gnss_work/initialisation.md"
+      - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange.md"
+      - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase.md"
+      - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing.md"
     - GNSS performance:
       - Introduction: "content/notes/gnss_performance/intro.md"
+      - Error Sources: "content/notes/gnss_performance/error_sources.md"
+      - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision.md"
+      - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision.md"
+      - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity.md"
+      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk.md"
+      - DGNSS: "content/notes/gnss_performance/dgnss.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Introduction: "content/notes/gnss_built_environment/intro.md"
     - CRS:
@@ -101,8 +113,20 @@ nav:
       - Empty Section: "content/notes/example/empty_section-long.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro-long.md"
+      - GPS segments: "content/notes/how_does_gnss_work/segments-long.md"
+      - Radio Signal: "content/notes/how_does_gnss_work/signal-long.md"
+      - Initialisation: "content/notes/how_does_gnss_work/initialisation-long.md"
+      - Pseudorange Measurement: "content/notes/how_does_gnss_work/pseudorange-long.md"
+      - Carrier Phase Measurement: "content/notes/how_does_gnss_work/carrier_phase-long.md"
+      - Jamming and Spoofing: "content/notes/how_does_gnss_work/jamming_spoofing-long.md"
     - GNSS performance:
       - Introduction: "content/notes/gnss_performance/intro-long.md"
+      - Error Sources: "content/notes/gnss_performance/error_sources-long.md"
+      - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision-long.md"
+      - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision-long.md"
+      - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity-long.md"
+      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
+      - DGNSS: "content/notes/gnss_performance/dgnss-long.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Introduction: "content/notes/gnss_built_environment/intro-long.md"
     - CRS:
