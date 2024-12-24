@@ -40,11 +40,13 @@ Any of these issues will cause the calculated pseudorange to be **inaccurate**. 
 
 #### 13.2.2 - Carrier phase measurement
 
-Additionally, a GPS receiver may measure the **fractional phase difference** between the received *carrier wave* from the satellite and a locally generated copy (replica). The carrier wave measurement is a **very precise measure** of the distance between the satellite and the receiver, but the initial number of carrier wave cycles is *unknown*, and needs to be estimated before the carrier phase measurements can be effectively used. The much better precision of the carrier phase measurement with respect to the pseudorange code measurement can be explained by **much smaller period** of the carrier compared to the code chip duration (for the L1 CA­code signal, 1540 periods of the carrier fit in one chip of the Pseudo Random Noise (PRN) spreading code).
+A GPS receiver may measure the **fractional phase difference** between the received *carrier wave* from the satellite and a locally generated copy (replica). The carrier wave measurement is a **very precise measure** of the distance between the satellite and the receiver, but the initial number of carrier wave cycles is *unknown*, and needs to be estimated before the carrier phase measurements can be effectively used.
+
+The much better precision of the carrier phase measurement with respect to the pseudorange code measurement can be explained by **much smaller period** of the carrier compared to the code chip duration (for the L1 CA­code signal, 1540 periods of the carrier fit in one chip of the Pseudo Random Noise (PRN) spreading code).
 
 #### 13.2.3 - Concluding remarks
 
-The receiver can also measure the received **signal ­strength**, through the so-­called carrier­ to-­noise-­density ratio $C/N_0$, which gives an indication of the **quality of the measurement** (larger signal­ strength yields more precise measurement).
+The receiver can measure the received **signal ­strength**, through the so-­called carrier­-to-­noise-­density ratio $C/N_0$, which gives an indication of the **quality of the measurement** (larger signal­ strength yields more precise measurement).
 
 The **pseudorange measurement** precision is typically at the *one or few meter* level for low­-cost, mass-­market equipment, and can get down to the *few decimeter level* for professional high­end equipment.
 
