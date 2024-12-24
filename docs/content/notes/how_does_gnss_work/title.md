@@ -1,1 +1,1 @@
-## How does GNSS work?
+# How does GNSS work?
