@@ -67,5 +67,6 @@ jobs:
         run: |
           git add docs/pdf/notes.pdf
           git add docs/pdf/notes-long.pdf
+          git add mkdocs.yml
           git commit -m "Automatic: Update PDFs" || echo "No changes to commit"
           git push
