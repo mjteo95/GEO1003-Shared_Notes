@@ -181,3 +181,23 @@ Table: A simple table
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
+
+### Math
+
+```markdown
+Inline math: $x^2$ is the square of $x$.
+
+Block math:
+
+$$
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
+```
+
+Inline math: $x^2$ is the square of $x$.
+
+Block math:
+
+$$
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+$$
