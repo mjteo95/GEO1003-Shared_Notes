@@ -1,3 +1,3 @@
-### 16 - GNSS and applications
+## 16 - GNSS and applications
 
 TODO

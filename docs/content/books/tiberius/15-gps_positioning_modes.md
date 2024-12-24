@@ -1,3 +1,3 @@
-### 15 - GPS positioning modes
+## 15 - GPS positioning modes
 
 TODO
