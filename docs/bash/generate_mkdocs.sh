@@ -15,13 +15,24 @@ EOF
 # Function to extract the first header from a markdown file
 extract_title() {
     local file="$1"
+    local fallback="Unknown Title"
+
     if [[ -f "$file" ]]; then
         # Extract the first markdown header (starting with '#')
-        grep -m 1 '^#' "$file" | sed 's/^#\+ *//' | sed 's/ *$//'
+        local title
+        title=$(grep -m 1 '^#' "$file" | sed 's/^#\+ *//' | sed 's/ *$//')
+
+        # If title is empty, return the fallback
+        if [[ -z "$title" ]]; then
+            echo "$fallback"
+        else
+            echo "$title"
+        fi
     else
-        echo "Unknown Title" # Fallback if the file doesn't exist or has no headers
+        echo "$fallback" # Fallback if the file doesn't exist
     fi
 }
+
 
 # Function to generate nav structure
 generate_nav_section() {
