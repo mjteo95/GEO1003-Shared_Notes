@@ -7,9 +7,7 @@ Understanding the structure of the notes is however useful in all cases.
 
 ## Structure
 
-### Notes
-
-#### Overall structure
+### Overall structure
 
 Overall, the notes are split in 3 parts:
 
@@ -34,7 +32,7 @@ It can also be very useful to anyone looking for more details about a spectifi t
 If you take notes sequentially when reading a book, adding notes to the book notes shouldn't ask you increased efforts.
 The content of these book notes should be like the content of the long notes.
 
-#### Repository Structure
+### Repository Structure
 
 If you only want to add or modify the content of the notes, you only care about a subset of what you can find in the folder [`docs`](docs).
 There, you can find:
@@ -43,3 +41,18 @@ There, you can find:
 - The folder [`images`](docs/images) where **ALL** the images used in the content should be
 - The file [`notes.txt`](docs/notes.txt) containing the outline of the concise and long notes (only the files that are in this file will be part of the concise and long notes)
 - The file [`books.txt`](docs/books.txt) containing the outline of the book notes (only the files that are in this file will be part of the book notes)
+
+The folder [`content`](docs/content) is split between [`notes`](docs/content/notes) for the concise and long notes (which have the same structure) and [`books`](docs/content/books) for the book notes.
+The two parts have their own structure.
+
+In [`notes`](docs/content/notes), each folder is a different topic and is organised in several Markdown files, each dealing with one sub-topic.
+Every file has a concise and a long version.
+The long version must be named by adding "-long" before the extension.
+So if the concise file is called `good_clear_name.md`, the long file must be called `good_clear_name-long.md`.
+
+In [`books`](docs/content/books), each folder is a different book and is organised in several Markeown files, each dealing with one chapter of the book.
+
+In both cases, every folder should contain a `title.md` file (and a `title-long.md` in the case of  [`notes`](docs/content/notes)).
+These files define the displayed name of the "folder".
+
+### Markdown Structure
