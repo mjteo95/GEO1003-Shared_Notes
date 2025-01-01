@@ -25,7 +25,7 @@ Then, the **long** notes are the mirror of the concise notes.
 They have to follow the exact same structure except they contain more thorough explanations that allow anyone to understand the concise notes.
 The content of these long notes doesn't need to be concise, it needs to be self-explanatory.
 
-Finally, the **book** notes are more of an intermediary and part.
+Finally, the **book** notes are more of an intermediary part.
 They contain one chapter per book and in each chapter, they follow exactly the structure of the book.
 The idea behind this part is to allow anyone curious about a book to quicly learn what it is about.
 It can also be very useful to anyone looking for more details about a spectifi topic, to know which sections of which books deal with it.
