@@ -6,9 +6,21 @@ Anyway, if you have any question, you can ask it to me by message or create an i
 
 The outline of this guide is:
 
-1. [Contributing on Github](#contributing-on-github)
-2. [Short guide](#short-guide)
-3. [Longer guide](#longer-guide)
+- [Contribution guide](#contribution-guide)
+  - [Contributing on Github](#contributing-on-github)
+  - [Short guide](#short-guide)
+    - [Overall structure](#overall-structure)
+    - [Find a note in the repository](#find-a-note-in-the-repository)
+    - [Add a new note](#add-a-new-note)
+    - [Images](#images)
+    - [Markdown syntax](#markdown-syntax)
+  - [Longer guide](#longer-guide)
+    - [Overall structure (longer version)](#overall-structure-longer-version)
+    - [Repository structure](#repository-structure)
+    - [Markdown structure](#markdown-structure)
+  - [PDF and website generation](#pdf-and-website-generation)
+    - [Automatic build](#automatic-build)
+    - [Local build](#local-build)
 
 Reading the short guide should be enough to understand how to avoid most pitfalls.
 
@@ -89,6 +101,31 @@ The content of these book notes should be like the content of the long notes.
 
 ### Repository structure
 
+The repo is structured as follows:
+
+```bash
+GEO1003-Shared-Notes/
+├── .cache/             # Cache folder for the website version
+├── .github/            # Github Actions and contribution guidelines
+├── docs/               # Main folder
+│   ├── bash/           # Scripts to export the notes as PDF
+│   ├── content/        # Content of the notes
+│   │   ├── books/      # Notes per book from the reader
+│   │   └── notes/      # Notes merged in coherent chapters
+│   ├── images/         # Images
+│   ├── javascripts/    # LaTeX rendering for the website version
+│   ├── pdf/            # Notes exported as PDF
+│   ├── index.md        # Main page of the notes for the website version
+│   ├── metadata.yaml   # Metadata of the notes
+│   ├── books.txt       # Table of contents of the books notes
+│   └── notes.txt       # Table of contents of the notes
+├── .gitignore          # Git ignore file
+├── .markdownlint.json  # Markdown linting configuration
+├── mkdocs.yml          # MkDocs configuration file for the website version
+├── README.md           # Main README file
+└── requirements.txt    # Python requirements
+```
+
 If you only want to add or modify the content of the notes, you only care about a subset of what you can find in the folder [`docs`](../docs).
 There, you can find:
 
@@ -119,3 +156,50 @@ The consequences are:
 
 - The first header of a file should be at the correct level, for example a level 3 header for a note in [`content/notes/crs`](../docs/content/notes/crs).
 - All the folders in [`content/notes`](../docs/content/notes) and in [`content/books`](../docs/content/books) should have a file called `title.md` (and `title-long.md` in the case of [`content/notes`](../docs/content/notes)) with the title of the folder, to ensure a correct hierarchy.
+
+## PDF and website generation
+
+The PDF versions are built using Pandoc and the website version is built using MkDocs.
+
+### Automatic build
+
+Whenever changes are pushed to the main branch, the GitHub Actions will automatically:
+
+1. Build the PDF versions of the notes
+2. Build and publish the new version of the notes on the GitHub Pages
+
+This process takes a few minutes, so if your changes are not directly visible on the website, this is normal.
+
+### Local build
+
+You can also build the notes locally. However, the versions used online will be the ones built by the GitHub Actions.
+
+To build the notes locally, you can follow these steps:
+
+1. Clone the repo with:
+
+    ```bash
+    git clone git@github.com:ZokszY/GEO1003-Shared_Notes.git
+    ```
+
+2. Create a Python virtual environment and install the requirements:
+
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+
+3. Export the notes as PDF (these commands require bash):
+
+    ```bash
+    cd docs
+    bash bash/run_all.sh
+    ```
+
+4. Run the website version locally:
+
+    ```bash
+    cd ..
+    mkdocs serve --open
+    ```
