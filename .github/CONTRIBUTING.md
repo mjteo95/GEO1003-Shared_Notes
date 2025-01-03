@@ -22,13 +22,16 @@ The outline of this guide is:
     - [Automatic build](#automatic-build)
     - [Local build](#local-build)
 
-Reading the short guide should be enough to understand how to avoid most pitfalls.
+Reading the [short guide](#short-guide) should be enough to understand how to avoid most pitfalls.
+If you want to be able to look at the output locally, you can read the part about [Local build](#local-build) in the [PDF and website generation](#pdf-and-website-generation) section.
 
 ## Contributing on Github
 
 If you want step-by-step instructions about contributing on Github, you can read [this article](https://lifeincoding.com/how-to-contribute-to-open-source-on-github/) or [this one](https://medium.com/@niceperson2110/making-your-first-github-contribution-a-beginners-guide-to-open-source-6d4a297358aa).
 
 ## Short guide
+
+If you don't know exactly how Github works, you should look at one of the guides from the previous section [Contributing on Github](#contributing-on-github).
 
 ### Overall structure
 
@@ -182,13 +185,18 @@ To build the notes locally, you can follow these steps:
     git clone git@github.com:ZokszY/GEO1003-Shared_Notes.git
     ```
 
+    To clone your own fork, you can replace `ZokszY` by your GitHub username.
+
 2. Create a Python virtual environment and install the requirements:
 
     ```bash
     python3 -m venv .venv
-    source .venv/bin/activate
+    source .venv/bin/activate # Different on Windows, look at the link below
     pip install -r requirements.txt
     ```
+
+    The commands are slightly different on Windows, you can look at the [official Python documentation](https://docs.python.org/3/library/venv.html#how-venvs-work) for more information.
+    The virtual environment is only needed for the website generation.
 
 3. Export the notes as PDF (these commands require bash):
 
@@ -197,9 +205,16 @@ To build the notes locally, you can follow these steps:
     bash bash/run_all.sh
     ```
 
+    The PDF versions will be in the [`docs/pdf`](../docs/pdf) folder.
+    This command must be run from the [`docs`](../docs) folder.
+
 4. Run the website version locally:
 
     ```bash
     cd ..
     mkdocs serve --open
     ```
+
+    This command will open a new tab in your browser with the website version of the notes.
+    You can ignore errors about `git-committers`.
+    This command must be run from the root of the repository.
