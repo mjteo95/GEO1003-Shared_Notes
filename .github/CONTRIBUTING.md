@@ -1,12 +1,7 @@
 # Contribution guide
 
-To contribute to these shared notes, you can take notes about any part of the reader that has not been tackled yet, or proofread notes made by others.
-This guide can help you to understand how to contribute to the notes.
-Anyway, if you have any question, you can ask it to me by message or create an issue on Github.
-
-The outline of this guide is:
-
 - [Contribution guide](#contribution-guide)
+  - [How to contribute?](#how-to-contribute)
   - [Contributing on Github](#contributing-on-github)
   - [Short guide](#short-guide)
     - [Overall structure](#overall-structure)
@@ -22,8 +17,35 @@ The outline of this guide is:
     - [Automatic build](#automatic-build)
     - [Local build](#local-build)
 
-Reading the [short guide](#short-guide) should be enough to understand how to avoid most pitfalls.
-If you want to be able to look at the output locally, you can read the part about [Local build](#local-build) in the [PDF and website generation](#pdf-and-website-generation) section.
+To contribute to these shared notes, you can take notes about any part of the reader that has not been tackled yet, or proofread notes made by others.
+This guide can help you to understand how to contribute to the notes.
+Anyway, if you have any question, you can ask it to me by message or create an issue on Github.
+
+This guide contains:
+
+- The section [How to contribute?](#how-to-contribute) which gives a general idea of the expected pipeline for a contribution.
+- The section [Contributing on Github](#contributing-on-github) to have step-by-step instructions if you are not familiar with Github.
+- The section [Short guide](#short-guide) to have more details about potential pitfalls and how to avoid them.
+- The section [Longer guide](#longer-guide) with more details about the structure of the notes and how to add content to them.
+- The section [PDF and website generation](#pdf-and-website-generation) to know how the notes are built and how to build them locally.
+
+## How to contribute?
+
+Here is the expected pipeline for a contribution:
+
+1. Fork the repository
+2. Make your changes:
+   1. Take notes about a part of the reader that has not been tackled yet
+   2. Put these notes in a new file in a folder in [`docs/content/books`](../docs/content/books) (not mandatory)
+   3. Copy the interesting parts of the notes at the right place in the long notes:
+      1. You might have to split the content to various places
+      2. If nothing in the current outline is fitting, you can add a new note or a new section in a note
+      3. If you add a new note, don't forget to add it to the outline in [`docs/notes.txt`](../docs/notes.txt)
+   4. Make a concise version of everything you added in the long notes and put it in the concise notes
+3. Commit your changes
+4. Push your changes
+5. Create a pull request (you can look at [this article](https://opensource.com/article/19/7/create-pull-request-github) for more information)
+6. Wait for the review and be ready to apply changes if needed
 
 ## Contributing on Github
 
