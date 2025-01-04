@@ -36,12 +36,15 @@ Here is the expected pipeline for a contribution:
 1. Fork the repository
 2. Make your changes:
    1. Take notes about a part of the reader that has not been tackled yet
-   2. Put these notes in a new file in a folder in [`docs/content/books`](../docs/content/books) (not mandatory)
+   2. Put these notes in a new file in a folder in [`docs/content/books`](../docs/content/books) (*not mandatory*)
    3. Copy the interesting parts of the notes at the right place in the long notes:
       1. You might have to split the content to various places
       2. If nothing in the current outline is fitting, you can add a new note or a new section in a note
-      3. If you add a new note, don't forget to add it to the outline in [`docs/notes.txt`](../docs/notes.txt)
-   4. Make a concise version of everything you added in the long notes and put it in the concise notes
+      3. If you add a new note:
+         1. Long and short notes are all in [`docs/content/notes`](../docs/content/notes)
+         2. Long notes should have the same name as their concise counterpart with `-long` at the end
+         3. Don't forget to add the path to the concise note to the outline in [`docs/notes.txt`](../docs/notes.txt)
+   4. Add to the concise notes a concise version of everything you added in the long notes
 3. Commit your changes
 4. Push your changes
 5. Create a pull request (you can look at [this article](https://opensource.com/article/19/7/create-pull-request-github) for more information)
