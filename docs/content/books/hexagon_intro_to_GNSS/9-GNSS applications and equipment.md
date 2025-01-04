@@ -51,14 +51,15 @@ Infrastructure visualisation using a LiDAR combined with a GNSS+INS, a user can 
 
 ### 9.7 - Timing
 
-As we mentioned in earlier chapters, time accuracy is critical for GNSS position determination. 
-This is why GNSS satellites are equipped with atomic clocks that are accurate to nanoseconds. 
+As we mentioned in earlier chapters, time accuracy is critical for GNSS position determination.
+This is why GNSS satellites are equipped with atomic clocks that are accurate to nanoseconds.
 As part of the position determining process, the local time of GNSS receivers becomes synchronised with the very accurate satellite time.
 
 ### 9.8 - Defence
 
 The defence sector makes broad use of
 GNSS technology, including:
+
 - NAVIGATION:
 Using GNSS receivers, soldiers and pilots can navigate unfamiliar terrain or conduct night-time operations. Most foot soldiers now carry hand-held GNSS receivers.
 - SEARCH AND RESCUE:
