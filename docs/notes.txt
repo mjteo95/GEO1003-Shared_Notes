@@ -33,5 +33,11 @@ content/notes/crs/map_projections.md
 content/notes/crs/rd_nap.md
 content/notes/wifi/title.md
 content/notes/wifi/intro.md
+content/notes/wifi/approaches.md
+content/notes/wifi/radio_based.md
+content/notes/wifi/other_techniques.md
+content/notes/wifi/performance_metrics.md
 content/notes/privacy/title.md
 content/notes/privacy/intro.md
+content/notes/privacy/spaces.md
+content/notes/privacy/indoorgml.md
