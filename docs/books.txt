@@ -16,3 +16,6 @@ content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md
 content/books/hexagon_intro_to_GNSS/7-GNSS threats.md
 content/books/hexagon_intro_to_GNSS/8-Autonomy.md
 content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md
+content/books/RDNAPTRANS/introduction.md
+content/books/RDNAPTRANS/TransformationETRS89toRD-NAP.md
+content/books/RDNAPTRANS/TransformationRD-NAPtoETRS89.md
