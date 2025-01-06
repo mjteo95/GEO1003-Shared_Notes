@@ -21,7 +21,22 @@ To transform the coordinates of a point of interest, its ETRS89 coordinates must
 
 ### Datum transformation
 
+#### Conversion to geocentric Cartesian coordinates
+Variant 1 - The ellipsoidal geographic ETRS89 coordinates of a point of interest must be converted to geocentric Cartesian ETRS89 coordinates to be able to apply a 3D similarity transformation.
+Variant 2 - the datum transformation (Section 2.2.1, 2.2.2 and 2.2.3) is included in the correction grid (Section 2.3).
 
+A fixed ellipsoidal height is used instead of the actual height of the point of interest. 
+As a result, points with the same latitude and longitude in ETRS89 that differ in height get exactly the same RD coordinates. 
+This enables 2D transformation between ETRS89 and RD and straightforward implementation in software like GIS packages. 
+However, it introduces small differences between back and forth transformation. 
+These differences are below 0.0010 m up to 500 km outside the bounds of the RDNAPTRANS™2018 grids.
+
+Do not use these geocentric Cartesian ETRS89 coordinates for other purposes than RDNAPTRANS™.
+For the transformation to RD coordinates with geocentric Cartesian ETRS89 coordinates obtained in a different way than by conversion with the fixed height (e.g. geocentric Cartesian ETRS89 coordinates obtained directly from GNSS measurements). 
+Convert such geocentric Cartesian ETRS89 coordinates first to ellipsoidal geographic ETRS89 coordinates (Section 3.3) and then perform the transformation to RD coordinates (Chapter 2).
+
+
+#### 2.2.2 3D similarity transformation
 
 ### Exam questions
 

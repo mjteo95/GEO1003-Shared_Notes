@@ -33,6 +33,7 @@ Several versions since then. The version of 2018 include the following uptades: 
 
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
+![Figure 1.2.2](../../../images/Steps_transformation_procedure.png){ width="600" }
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2). 
 
 Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation. 
@@ -43,11 +44,3 @@ Implementation variant 2 includes the datum transformation in the correction gri
 Although transformation at sea and even outside the grid bounds is possible, the scale factor of the map projection increases rapidly and also **the precision of transformation back and forth deteriorates**. There are bounds to the recommended use of RD and NAP at sea and outside the Netherlands.
 
 PROJ library can be used for large datasets.
-
-### Exam questions
-
-- What could go wrong when users exchanging geoinformation in RD coordinates do not use the official RDNAPTRANS™ procedure between ETRS89 and RD?
-- What are the needed operations for a transformation from ETRS89 to the Rijksdriehoeksstelsel?
-- For what purposes is a more accurate geoid useful?
-- What are the factors you would consider when choosing between different CRSs?
-- What are the current issues concerning CRS?
