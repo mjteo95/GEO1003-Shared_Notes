@@ -181,6 +181,6 @@ nav:
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
+      - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
+      - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
