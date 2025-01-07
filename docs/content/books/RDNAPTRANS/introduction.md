@@ -36,7 +36,8 @@ The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When
 ![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2). 
 
-Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component. 
+Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  
+The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component. 
 
 Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids. 
 
