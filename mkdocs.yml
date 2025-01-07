@@ -184,3 +184,5 @@ nav:
       - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
       - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
+    - PPP-RTK Market and Technology Report:
+      - 3 - Potential PPP-RTK Based Applications: "content/books/ppp-rtk_market_and_technology_report/3_potential_applications.md"
