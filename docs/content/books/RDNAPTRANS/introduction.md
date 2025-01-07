@@ -19,7 +19,7 @@ Storage and exchange of geo-information at sea:
 The difference is presently (2019) approximately 0.75 m and increasing by 0.024 m per year.
 
 Since ellipsoidal heights in ETRS89 are only geometrical and have no physical meaning, other height references are used too.
-![Validity area of RDNAPTRANS™](../../../images/Validity-area-of-RDNAPTRANS.png){ width="600" }
+![Validity area of RDNAPTRANS™](../../../images/Validity-area-of-RDNAPTRANS.png)
 
 While ETRS89 coordinates cannot be visualised on a paper map or a map on a computer screen without a map projection. RD coordinates are very suitable as map projection for visualisation of geo-information in ETRS89 coordinates for the entire European part of the Netherlands, including the Dutch Exclusive Economic Zone (EEZ) of the North Sea, and its surroundings.
 
@@ -33,11 +33,10 @@ Several versions since then. The version of 2018 include the following uptades: 
 
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
-![Figure 1.2.2](../../../images/Steps_transformation_procedure.png){ width="600" }
+![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2). 
 
-Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation. 
-The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component. 
+Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  The advantage of implementation variant 1 is that it has no strict bounds for the area where horizontal coordinates can be transformed correctly. The disadvantage is that many software packages do not support implementation variant 1 for the horizontal component. 
 
 Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids. 
 
