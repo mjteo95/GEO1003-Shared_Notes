@@ -45,7 +45,7 @@ This technique uses one “Master” reference station and its raw data stream s
 
 **As MAC is based on a broadcast data format it does not require a bi-directional communication link; however, the technology is limited by the number of CORS that can be included within the data stream and additional computational requirements placed upon the rover.** The limited number of CORS stations that can be incorporated within the network restricts the serviceable area of the technology, making it **poorly suited to mass-market applications**.
 
-![Master-Auxiliary-Concept](../../../images/Master-Auxiliary-Concept.png){ width="600" }
+![Master-Auxiliary-Concept](../../../images/Master-Auxiliary-Concept.png){ width="400" }
 
 
 #### Sensor Fusion with RTK
@@ -67,7 +67,7 @@ Array-Aided PPP (A-PPP) uses GNSS data from an array of antennas to provide prec
 Additionally, the correlation between absolute pseudoranges, carrier phases, and precise between-antenna pseudoranges improves accuracy and platform parameter estimation. Integrity is also enhanced through increased redundancy, enabling better error detection and multipath mitigation. However, the need for multiple antennas in a known formation makes this technology impractical for mass-market devices.
 
 ### Precise Point Positioning – Real-Time Kinematic (PPP-RTK)
-![PPP-RTK-Concept](../../../images/PPP-RTK-concept.png){ width="600" }
+![PPP-RTK-Concept](../../../images/PPP-RTK-concept.png){ width="400" }
 
 Researchers and service providers are combining PPP and RTK into PPP-RTK to leverage the strengths of both. PPP-RTK enhances PPP by incorporating un-differenced atmospheric and satellite clock corrections from a CORS network, enabling instantaneous ambiguity fixing and shorter convergence times.
 
@@ -89,5 +89,5 @@ The use of SSR enables PPP-RTK corrections to be broadcast with lower bandwidth 
 **Some experts do not believe that PPP-RTK offers a significant improvement over NRTK as they are both reliant upon a CORS network. Within regions with well-established CORS networks, PPP-RTK and NRTK are expected to deliver comparable results.**
 
 ### Message Format
-![message-format](../../../images/message-format.png){ width="600" }
+![message-format](../../../images/message-format.png){ width="400" }
 
