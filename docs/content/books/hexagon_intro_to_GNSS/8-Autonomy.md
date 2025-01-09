@@ -18,7 +18,7 @@ AVs pretty much all use PPP combined with an IMU to determine the AV's position.
 
 Combining the signals of all these different sensors can be tricky but if done right the sensors will compliment each other and reduce error overall.
 In a modern vehicle, you can expect to find speed sensors on every wheel, yaw rate sensors, steering angle sensors, transmission settings, throttle and brakesensors.
-All of them transmitting information to a highspeed data bus (Figure 54). 
+All of them transmitting information to a highspeed data bus (Figure 54).
 Combining these sensor outputs with an onboard IMU can provide a positioning solution with redundant measurements for velocity, turn rate and vehicle direction.
 
 ### Traditional positioning safety
