@@ -1,10 +1,13 @@
 ## 5 - Relevant Standardisation 
+
 While RTK is well-standardized and conventional PPP is supported by RTCM 3.3, RTCM-SSR messages are still under evaluation by the RTCM SC104 working group, potentially prompting alternative standards like QZSS CLAS. Efforts are also underway to include SSR (PPP-RTK) corrections in 3GPP standards for LTE-based positioning.
 
 Several free, open high-accuracy GNSS services are in development or early deployment (see Exhibit 32). As interoperability between correction services and receivers grows in importance, global standardization of correction signals remains critical. The source document discuss four main standards relevant to high-accuracy positioning: 
 
 
-Exhibit 32: Open Satellite-Based High-Accuracy GNSS Correction Services
+Exhibit 32: Open Satellite-Based High-Accuracy GNSS Correction Services 
+
+
 | System | Service      | Satellite | Status    | Signal       | Data Rate | Format        |
 | :----- | :----------- | :------- | :-------- | :---------- | :-------- | :------------- |
 | QZSS   | CLAS         | IGSO / GEO  | Operational (2018) | 1.278 GHz (L6D) | 2,000 bps  | Compact SSR    |

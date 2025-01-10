@@ -1,4 +1,5 @@
 ## 6 - Conclusion
+
 Breakdown of the key conclusions from Chapter 6, organised by topic:
 
 ### PPP-RTK
