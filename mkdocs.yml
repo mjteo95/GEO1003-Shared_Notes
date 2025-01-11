@@ -39,6 +39,8 @@ edit_uri: edit/main/docs/
 
 markdown_extensions:
   - attr_list
+  - def_list
+  - mdx_truly_sane_lists
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -46,7 +48,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - mdx_truly_sane_lists
   - pymdownx.arithmatex:
       generic: true
 

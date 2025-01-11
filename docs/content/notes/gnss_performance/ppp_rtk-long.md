@@ -59,8 +59,6 @@ RTK, which utilises the OSR approach, corrects for location-dependent errors lik
 
 #### OSR Approach
 
-Some of the key features of RTK are closely related to its OSR (Observation Space Representation) approach. OSR groups the errors together and provides the total correction measurements, rather than for the individual parameters.  All parameters are updated at the same frequency regardless of their time sensitivity.
-
 The OSR approach (and thus RTK) has high bandwidth requirements because:
 
 - **It requires a two-way communication channel for each user.**  
@@ -119,4 +117,5 @@ It bridges the gap between traditional PPP and RTK, offering a more versatile an
 The choice depends on the application's needs and available infrastructure.
 
 ![PPP vs RTK vs PPP-RTK](../../../images/PPP-RTK-concept.png){ width="600" }
+
 ![difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
