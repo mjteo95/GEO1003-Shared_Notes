@@ -1,7 +1,9 @@
 ## 4 - Competitive Landscape
+
 In my opinion, this chapter isn't as important as the others, as it focuses more on market trends and service providers rather than the concepts of the technology itself. I didn’t include all the content in these notes, but if you think it's relevant to you, I recommend taking a closer look at the document.
 
 ### Overview
+
 The market for high accuracy GNSS applications is mature in the professional field, with applications in sectors like mapping, surveying, GIS, mining, and agriculture. Current service providers offer a range of solutions, including SBAS, RTK, DGNSS, and PPP, with innovative concepts like PPP-RTK emerging. However, these services are currently focused on professional applications due to hardware limitations in mass-market receivers.
 
 

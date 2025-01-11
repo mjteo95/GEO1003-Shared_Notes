@@ -48,7 +48,7 @@ This technique uses one “Master” reference station and its raw data stream s
 
 **As MAC is based on a broadcast data format it does not require a bi-directional communication link; however, the technology is limited by the number of CORS that can be included within the data stream and additional computational requirements placed upon the rover.** The limited number of CORS stations that can be incorporated within the network restricts the serviceable area of the technology, making it **poorly suited to mass-market applications**.
 
-![Master-Auxiliary-Concept](../../../images/Master-Auxiliary-Concept.png){ width="400" }
+![Master-Auxiliary-Concept](../../../images/Master-Auxiliary-Concept.png){ width="500" }
 
 #### Sensor Fusion with RTK
 
@@ -74,7 +74,7 @@ Additionally, the correlation between absolute pseudoranges, carrier phases, and
 
 ### Precise Point Positioning – Real-Time Kinematic (PPP-RTK)
 
-![PPP-RTK-Concept](../../../images/PPP-RTK-concept.png){ width="400" }
+![PPP-RTK-Concept](../../../images/PPP-RTK-concept.png){ width="600" }
 
 Researchers and service providers are combining PPP and RTK into PPP-RTK to leverage the strengths of both. PPP-RTK enhances PPP by incorporating un-differenced atmospheric and satellite clock corrections from a CORS network, enabling instantaneous ambiguity fixing and shorter convergence times.
 
@@ -98,4 +98,4 @@ The use of SSR enables PPP-RTK corrections to be broadcast with lower bandwidth 
 
 ### Message Format
 
-![message-format](../../../images/message-format.png){ width="400" }
+![difference in message format and resolved errors](../../../images/message-format.png){ width="500" }
