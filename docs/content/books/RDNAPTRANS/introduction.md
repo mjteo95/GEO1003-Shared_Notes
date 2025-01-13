@@ -24,7 +24,7 @@ Since ellipsoidal heights in ETRS89 are only geometrical and have no physical me
 
 While ETRS89 coordinates cannot be visualised on a paper map or a map on a computer screen without a map projection. RD coordinates are very suitable as map projection for visualisation of geo-information in ETRS89 coordinates for the entire European part of the Netherlands, including the Dutch Exclusive Economic Zone (EEZ) of the North Sea, and its surroundings.
 
-### Coordinate transformation
+### Coordinate transformation RDNAPTRANS™
 
 The official coordinate transformation between European ETRS89 coordinates and Dutch coordinates in RD and NAP is called RDNAPTRANS™
 As a trademark, permission is required to be used. Permission is granted for correctly implemented aplications. **In some software, the transformation method is implemented correctly, but the software needs to be configured or the right options need to be selected to support RDNAPTRANS™.**
