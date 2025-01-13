@@ -16,6 +16,12 @@ content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md
 content/books/hexagon_intro_to_GNSS/7-GNSS threats.md
 content/books/hexagon_intro_to_GNSS/8-Autonomy.md
 content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md
+content/books/ppp-rtk_market_and_technology_report/title.md
+content/books/ppp-rtk_market_and_technology_report/2_technical_analysis.md
+content/books/ppp-rtk_market_and_technology_report/3_potential_applications.md
+content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md
+content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md
+content/books/ppp-rtk_market_and_technology_report/6_conclusion.md
 content/books/RDNAPTRANS/introduction.md
 content/books/RDNAPTRANS/2-transformationETRS89toRD-NAP.md
 content/books/RDNAPTRANS/3-transformationRD-NAPtoETRS89.md

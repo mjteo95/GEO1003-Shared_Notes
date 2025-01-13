@@ -39,6 +39,8 @@ edit_uri: edit/main/docs/
 
 markdown_extensions:
   - attr_list
+  - def_list
+  - mdx_truly_sane_lists
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -46,7 +48,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - mdx_truly_sane_lists
   - pymdownx.arithmatex:
       generic: true
 
@@ -181,6 +182,12 @@ nav:
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
       - Unknown Title: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
+      - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
+      - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
+    - PPP-RTK Market and Technology Report:
+      - 2 - Technical Analysis: "content/books/ppp-rtk_market_and_technology_report/2_technical_analysis.md"
+      - 3 - Potential PPP-RTK Based Applications: "content/books/ppp-rtk_market_and_technology_report/3_potential_applications.md"
+      - 4 - Competitive Landscape: "content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md"
+      - 5 - Relevant Standardisation: "content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md"
+      - 6 - Conclusion: "content/books/ppp-rtk_market_and_technology_report/6_conclusion.md"
