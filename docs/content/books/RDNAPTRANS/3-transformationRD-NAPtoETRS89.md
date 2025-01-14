@@ -12,9 +12,9 @@ The RD map projection is a double projection. The first step of the inverse map 
 The second step of the inverse RD map projection is an inverse Gauss conformal projection from the sphere to the Bessel ellipsoid to obtain Bessel coordinates of the point of interest (Formula 3.1.2).
 Do not use spherical or ellipsoidal Bessel coordinates for other purposes than RDNAPTRANS™ to avoid confusion with ETRS89 coordinates.
 
-## 3.2 RD correction
+### 3.2 RD correction
 
-### 3.2.1 Direct correction
+#### 3.2.1 Direct correction
 
 The ellipsoidal geographic coordinates of a point of interest obtained by the inverse map projection, are real Bessel coordinates. Due to the error propagation of measurement noise of the original (1888–1928) measurements of RD, the real Bessel coordinates must be corrected up to 0.25 m to obtain pseudo Bessel coordinates. For implementation variant 2, the datum transformation is included in the correction grid (Section 3.2.2).
 The corrections are obtained from a regular grid of values for latitude correction and a regular grid of values for longitude correction, using bilinear interpolation (Formula 2.3.1). A unit conversion (Formula 2.1) might be needed, as the correction values are given in degrees or arcseconds, depending on the data format of the correction grid. v
@@ -27,7 +27,7 @@ The horizontal ellipsoidal geographic real Bessel coordinates of the point of in
 No iteration is needed for the transformation from RD to ETRS89 coordinates as the grid is given in real Bessel coordinates.
 Do not use Bessel coordinates for other purposes than RDNAPTRANS™ to avoid confusion with ETRS89 coordinates.
 
-### 3.2.2 Datum transformation in the correction grid
+#### 3.2.2 Datum transformation in the correction grid
 
 It is possible to include the datum transformation in the correction grid.  
 The alternative grid for this implementation variant 2 contains the latitude and longitude corrections up to 0.25 m, but also the datum difference (about 0.1 km in the central part of the Netherlands).  
@@ -38,7 +38,7 @@ When the datum transformation is included in the correction grid, it is not poss
 A point of interest outside the grid bounds should be transformed with the 3D similarity transformation (Section 3.3) or no value should be given at all for such point.  
 A no result outside the bounds of the correction grid is best accompanied with a warning that the RD coordinates are out of bounds.
 
-## 3.3 Datum transformation
+### 3.3 Datum transformation
 
 The corrected ellipsoidal geographic Bessel coordinates of a point of interest must be transformed to ellipsoidal geographic ETRS89 coordinates.  
 This is only needed for implementation variant 1, for variant 2 the datum transformation (Section 3.3) is included in the correction grid (Section 3.2).  
@@ -55,11 +55,11 @@ Do not use these geocentric Cartesian ETRS89 coordinates for other purposes than
 Instead, first convert the coordinates of the point of interest to ellipsoidal ETRS89 geographic coordinates and perform the height transformation (Section 3.5), then convert to geocentric Cartesian ETRS89 coordinates with the actual height of the point of interest to obtain geocentric Cartesian ETRS89 coordinates.
 After the 3D similarity transformation, the geocentric Cartesian ETRS89 coordinates of the point of interest must be converted back to ellipsoidal geographic ETRS89 coordinates (Formula 2.2.3). The latitude is computed iteratively. The parameters of the GRS80 ellipsoid (Section 2.2.1) are needed for the conversion to ellipsoidal geographic coordinates for the transformation from RD to ETRS89.
 
-## 3.4 Notation in degrees, minutes and seconds
+### 3.4 Notation in degrees, minutes and seconds
 
 The ETRS89 coordinates of a point of interest obtained after transformation are in radians or decimal degrees, depending on the type of goniometry functions used. These coordinates must be converted to decimal degrees and optionally to degrees, minutes and seconds (Formula 3.4). Traditionally, the latitude and longitude of a point of interest are given as integer degrees, integer minutes and decimal seconds with a hemisphere code, but other notation formats and variations on these are used too (Section 2.1).
 
-## 3.5 Height transformation
+### 3.5 Height transformation
 
 The physical NAP height of a point of interest can be transformed to the purely geometrical ellipsoidal ETRS89 height. The height transformation from NAP to ETRS89 is based on the quasi-geoid model NLGEO2018. The quasi-geoid height at the point of interest is obtained by bilinear interpolation of a regular grid of quasi-geoid height values (Formula 2.5.1). A unit conversion (Formula 2.1) is only needed when working with radians.  
 
@@ -70,11 +70,3 @@ Implementation variant 1 uses the ETRS89 grid for transformation in both transfo
 
 Some software expect the quasi-geoid grid to give ETRS89 quasi-geoid height in a Bessel grid. For these applications implementation variant 2 with the Bessel grid is used in both transformation directions, for RD and NAP to ETRS89 as well as ETRS89 to RD and NAP.
 The NAP height of the point of interest must be transformed to ellipsoidal ETRS89 height (Formula 3.5) using the interpolated quasi-geoid height of the point of interest.
-
-### Exam questions
-
-- What could go wrong when users exchanging geoinformation in RD coordinates do not use the official RDNAPTRANS™ procedure between ETRS89 and RD?
-- What are the needed operations for a transformation from ETRS89 to the Rijksdriehoeksstelsel (RD)?
-- For what purposes is a more accurate geoid useful?
-- What are the factors you would consider when choosing between different CRSs?
-- What are the current issues concerning CRS?

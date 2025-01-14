@@ -1,6 +1,6 @@
 ## RDNAP
 
-### Coordinate Systems
+### 0. Coordinate Systems
 
 Official 3D coordinate system of the Netherlands and Europe: European Terrestrial Reference System 1989 (ETRS89).
 ETRS89 is linked to the International Terrestrial Reference System (ITRS) by a time-dependant coordinate transformation.  
@@ -17,7 +17,7 @@ Maintaining reference points for ETRS89 and the transformation to RD coordinates
 Heights relative to Normaal Amsterdams Peil (NAP) are the official and the most-frequently used heights on land and internal waters.  The NAP is a legal responsibility of Rijkswaterstaat
 Ellipsoidal heights in ETRS89 can be transformed with the quasi-geoid model to NAP with a precision higher than ETRS89 coordinates obtained with most GNSS measurements.
 
-### Coordinate transformation
+### 1. Coordinate transformation
 
 The official coordinate transformation between European ETRS89 coordinates and Dutch coordinates in RD and NAP is called RDNAPTRANS™
 
@@ -118,7 +118,7 @@ The quasi-geoid heights are in metres, spacing and coordinates of grid bounds ar
 
 The ellipsoidal ETRS89 height of the point of interest must be transformed to NAP height (Formula 2.5.2) using the interpolated quasi-geoid height of the point of interest.
 
-### 3. Transformation from ETRS89 to RD and NAP
+### 3. Transformation from RD and NAP to ETRS89
 
 #### 3.1 Inverse map projection
 

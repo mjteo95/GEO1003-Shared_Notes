@@ -32,7 +32,7 @@ The advantage of implementation variant 1 is that it has no strict bounds for th
 
 Implementation variant 2 includes the datum transformation in the correction grid and uses a different quasi-geoid grid for the height transformation. Implementation variant 2 for the horizontal component is supported by more software but can only be used within the bounds of the correction grid (Figure 1.1.1). The difference in the resulting coordinates between the two variants is well below 0.0010 m within the bounds of the RDNAPTRANS™2018 grids.  
 
-### Transformation from ETRS89 to RD and NAP: Steps 
+### Transformation from ETRS89 to RD and NAP: Steps
 
 1. Datum transformation
 
@@ -65,7 +65,7 @@ Implementation variant 2 includes the datum transformation in the correction gri
 
    4.2 Transformation to NAP
 
-### Transformation from ETRS89 to RD and NAP: Steps 
+### Transformation from RD and NAP to ETRS89: Steps
 
 1. Inverse map projection
 
