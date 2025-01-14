@@ -1,3 +1,3 @@
 ## Empty Section
 
-This section gives more information about the empty section.
+This section gives more information about the empty section. Or not.
