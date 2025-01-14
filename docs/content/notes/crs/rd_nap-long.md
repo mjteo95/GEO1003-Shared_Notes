@@ -142,14 +142,13 @@ To transform the point of interest, the nearest NW, NE, SW and SE grid values ar
 The horizontal ellipsoidal geographic real Bessel coordinates of the point of interest must be corrected to pseudo Bessel coordinates (Formula 3.2.1) using the interpolated correction grid value of the point of interest.  
 No iteration is needed for the transformation from RD to ETRS89 coordinates as the grid is given in real Bessel coordinates.
 
-
-### 3.2.2 Datum transformation in the correction grid
+##### 3.2.2 Datum transformation in the correction grid
 
 It is possible to include the datum transformation in the correction grid.  
 In that way the 3D similarity transformation (Section 3.3) is not needed.  
 With this alternative grid a bilinear interpolation of the latitude and longitude corrections (Formula 2.3.1) at the nearest grid points (Formula 2.3.2) and correction of real Bessel coordinates (Formula 3.2.1) can be applied as for a correction grid without the datum transformation, but in this case the output are ETRS89 coordinates of the point of interest instead of pseudo Bessel coordinates.
 
-### 3.3 Datum transformation
+#### 3.3 Datum transformation
 
 The corrected ellipsoidal geographic Bessel coordinates of a point of interest must be transformed to ellipsoidal geographic ETRS89 coordinates.  
 This is only needed for implementation variant 1, for variant 2 the datum transformation (Section 3.3) is included in the correction grid (Section 3.2).  
