@@ -43,7 +43,7 @@ Implementation variant 2 includes the datum transformation in the correction gri
 
    1.3 Conversion from geocentric Cartesian coordinates back to ellipsoidal geographic Bessel coordinates (Formula 2.2.3).
 
-1. RD correction
+2. RD correction
 
    2.1 Bilinear correction grid interpolation to obtain real Bessel coordinates.
 
