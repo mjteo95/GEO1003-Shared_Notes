@@ -1,4 +1,5 @@
 ## Introduction
+
 ### Coordinate Systems
 
 Official 3D coordinate system of the Netherlands and Europe: European Terrestrial Reference System 1989 (ETRS89).
@@ -14,12 +15,14 @@ Heights relative to Normaal Amsterdams Peil (NAP) are the official and the most-
 Ellipsoidal heights in ETRS89 can be transformed with the quasi-geoid model to NAP with a precision higher than ETRS89 coordinates obtained with most GNSS measurements.
 
 Storage and exchange of geo-information at sea:
+
 1. International Hydrographic Organisation (IHO): World Geodetic System 1984 (WGS 84)
 2. EU: ETRS89.
 
 The difference is presently (2019) approximately 0.75 m and increasing by 0.024 m per year.
 
 Since ellipsoidal heights in ETRS89 are only geometrical and have no physical meaning, other height references are used too.
+
 ![Validity area of RDNAPTRANS™](../../../images/Validity-area-of-RDNAPTRANS.png)
 
 While ETRS89 coordinates cannot be visualised on a paper map or a map on a computer screen without a map projection. RD coordinates are very suitable as map projection for visualisation of geo-information in ETRS89 coordinates for the entire European part of the Netherlands, including the Dutch Exclusive Economic Zone (EEZ) of the North Sea, and its surroundings.
@@ -35,6 +38,7 @@ Several versions since then. The version of 2018 include the following uptades: 
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
 ![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
+
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2).  
 
 Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  

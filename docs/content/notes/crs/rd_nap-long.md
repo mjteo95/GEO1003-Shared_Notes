@@ -1,10 +1,13 @@
 ## RDNAP
+
 ### Coordinate Systems
+
 Official 3D coordinate system of the Netherlands and Europe: European Terrestrial Reference System 1989 (ETRS89).
 ETRS89 is linked to the International Terrestrial Reference System (ITRS) by a time-dependant coordinate transformation.  
 National coordinate systems in Europe are linked to ETRS89.
 
 #### Rijksdriehoeksmeting (RD)
+
 Coordinates in the Dutch Stelsel van de Rijksdriehoeksmeting (RD) are the most-frequently used 2D coordinates on land and internal waters.
 RD coordinates are defined by the official transformation from ETRS89 coordinates.
 Maintaining reference points for ETRS89 and the transformation to RD coordinates are legal responsibilities of Kadaster.
@@ -21,6 +24,7 @@ The official coordinate transformation between European ETRS89 coordinates and D
 The recommended ETRS89 realisation is ETRF2000 at epoch 2010.50 (AGRS2010). When using RDNAPTRANS™2018 it is important to use this realisation and epoch, especially for the height. For applications demanding high accuracy, it is recommended to obtain the NAP height of the point of interest by levelling to nearby NAP benchmarks.
 
 ![Figure 1.2.2](../../../images/Steps_transformation_procedure.png)
+
 There are two variants for the implementation of the horizontal component of RDNAPTRANS™2018 and two variants for the vertical component (Figure 1.2.2).  
 
 Implementation variant 1 applies the datum transformation as a separate step using a 3D similarity transformation.  
@@ -162,7 +166,7 @@ After the 3D similarity transformation, the geocentric Cartesian ETRS89 coordina
 
 #### 3.4 Notation in degrees, minutes and seconds
 
-The ETRS89 coordinates of a point of interest obtained after transformation are in radians or decimal degrees, depending on the type of goniometry functions used. These coordinates must be converted to decimal degrees and optionally to degrees, minutes and seconds (Formula 3.4). 
+The ETRS89 coordinates of a point of interest obtained after transformation are in radians or decimal degrees, depending on the type of goniometry functions used. These coordinates must be converted to decimal degrees and optionally to degrees, minutes and seconds (Formula 3.4).  
 
 #### 3.5 Height transformation
 
