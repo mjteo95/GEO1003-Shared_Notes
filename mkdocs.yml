@@ -191,3 +191,6 @@ nav:
       - 4 - Competitive Landscape: "content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md"
       - 5 - Relevant Standardisation: "content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md"
       - 6 - Conclusion: "content/books/ppp-rtk_market_and_technology_report/6_conclusion.md"
+    - Articles about Indoor Positioning:
+      - Meshlium Technical Guide - Smartphone Detection: "content/books/indoor_books/meshlium_smartphone_detection.md"
+      - Position Location Place and Area - An Indoor Perspective: "content/books/indoor_books/sithole_position_location_plane_area_indoor.md"
