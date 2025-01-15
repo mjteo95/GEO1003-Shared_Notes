@@ -22,3 +22,6 @@ content/books/ppp-rtk_market_and_technology_report/3_potential_applications.md
 content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md
 content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md
 content/books/ppp-rtk_market_and_technology_report/6_conclusion.md
+content/books/indoor_books/title.md
+content/books/indoor_books/meshlium_smartphone_detection.md
+content/books/indoor_books/sithole_position_location_plane_area_indoor.md
