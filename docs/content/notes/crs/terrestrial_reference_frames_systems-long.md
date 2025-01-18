@@ -1,4 +1,5 @@
 ## Terrestrial Reference Systems and Frames
+
 In this chapter of the summary, we will highlight some examples of Coordinate Reference Systems and Frames:
 
 ![Terrestrial Reference Systems](../../../images/GGRF.png){width:"50%"}
@@ -7,7 +8,7 @@ In this chapter of the summary, we will highlight some examples of Coordinate Re
 
 **ITRF: International Terrestrial Reference Frames** are realisations of the ITRS. They publish updates every ~1-6 years. Due to the movement of tectonic plates, the differences between each iteration can be multiple centimetres to decimetres. Two examples are ITRF2014 and ITRF2020 (NB: Frame != epoch, e.g. ITRF2014@2022.90). These updates reflect:
 
-* Improved precision of the station positions $r$($t$0) and velocities 𝐫̇ due to the availability of a longer period of observations, which is particularly important for the velocities,
+* Improved precision of the station positions $r$($t$0) and velocities $r$ due to the availability of a longer period of observations, which is particularly important for the velocities,
 
 * Improved datum definition due to the availability of more observations and better models,
 
