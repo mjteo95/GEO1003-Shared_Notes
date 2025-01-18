@@ -2,7 +2,7 @@
 
 > pages 3-10 of Hexagon intro to GNSS
 
-![Screenshot 2025-01-18 113239.png](../../../images/screenshots%20Hexagon%20book/Screenshot%202025-01-18%20113239.png)
+![GNSS segments.png](../../../images/screenshots%20Hexagon%20book/GNSS%20segments.png)
 
 GNSS (Global Navigation Satellite System) = collection of satellite positioning systems, called “constellations,” from various countries that are in operation or planned.
 - GPS (United States)
@@ -19,7 +19,8 @@ GNSS consists of 3 major components or segments: space segment, control segment 
 Consists of GNSS satellites orbiting (far away, 19-36.000 km above Earth).
 Each GNSS has its own constellation of satellites, arranged in orbits to provide the desired coverage.
 Each satellite in a GNSS constellation broadcasts a signal identifying itself and providing its precise time, orbit location and system health status.
-![Screenshot 2025-01-18 113302.png](../../../images/screenshots%20Hexagon%20book/Screenshot%202025-01-18%20113302.png)
+
+![GNSS satellite orbits.png](../../../images/screenshots%20Hexagon%20book/GNSS%20satellite%20orbits.png)
 
 ### Control segment
 
@@ -41,7 +42,8 @@ Weakness: by the time GNSS signals reach the ground, they are very weak
 ### GNSS positioning
 
 Based on a process called “trilateration” - determining position by measuring distances from three known points.
-![Screenshot 2025-01-18 113328.png](../../../images/screenshots%20Hexagon%20book/Screenshot%202025-01-18%20113328.png)
+
+![trilateration.png](../../../images/screenshots%20Hexagon%20book/trilateration.png)
 
 With a third distance, you can only be in one physical location.
 Extension to satellites: replaces physical reference points with satellites to calculate precise locations.
@@ -53,7 +55,7 @@ GNSS provides precise time synchronization for power grids, cellular systems, th
 
 ### GNSS user equipment - components
 
-![Screenshot 2025-01-18 113350.png](../../../images/screenshots%20Hexagon%20book/Screenshot%202025-01-18%20113350.png)
+![GNSS user equipment.png](../../../images/screenshots%20Hexagon%20book/GNSS%20user%20equipment.png)
 
 GNSS antennas: Receive satellite signals; designs vary depending on applications (e.g. base stations, UAVs).
 GNSS receivers: process signals recovered by the antenna to calculate position and time; available in various configurations for different needs.
