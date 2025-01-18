@@ -176,12 +176,12 @@ nav:
     - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview:
       - 1 - Introduction: "content/books/shixiong_xia/notes.md"
     - Hexagon - Intro to GNSS:
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/1-Overview.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/3-GNSS constellations.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
-      - Unknown Title: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
+      - 1 - Overview: "content/books/hexagon_intro_to_GNSS/1-Overview.md"
+      - 2 - Basic GNSS concepts: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
+      - 3 - GNSS constellations: "content/books/hexagon_intro_to_GNSS/3-GNSS constellations.md"
+      - 4 - GNSS error sources: "content/books/hexagon_intro_to_GNSS/4-GNSS error sources.md"
+      - 5 - Resolving error: "content/books/hexagon_intro_to_GNSS/5-Resolving errors.md"
+      - 6 - Sensor fusion: "content/books/hexagon_intro_to_GNSS/6-Sensor fusion.md"
       - 7 - GNSS threats: "content/books/hexagon_intro_to_GNSS/7-GNSS threats.md"
       - 8 - Autonomy: "content/books/hexagon_intro_to_GNSS/8-Autonomy.md"
       - 9 - GNSS applications and equipment: "content/books/hexagon_intro_to_GNSS/9-GNSS applications and equipment.md"
