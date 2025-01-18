@@ -6,16 +6,16 @@ GNSS technologies have revolutionized the way businesses and governments operate
 
 ### 9.1 - Consumer
 
-GNSS receivers are now common in consumer hardware like phones, mostly for routing (like Goole Maps)
+GNSS receivers are now common in consumer hardware like phones, mostly for routing (like Goole Maps).
 
 ### 9.2 - Transportation
 
-In rail transportation GNSS is used to keep track of al trains and monitor them form a control room.
+In rail transportation GNSS is used to keep track of all trains and monitor them form a control room.
 In aviation GNSS is used for routing and to make sure planes don't collide midair.
-these same patterns of monitoring and routing hold for shipping, driving, biking etc.
+These same patterns of monitoring and routing hold for shipping, driving, biking etc.
 
-Other uses include (semi)autonomous driving or parking and.
-A special case mentioned is that of snowplows using PPP positioning to plow roads covered in so much snow the driver cant even see where they are.
+Other uses include (semi)autonomous driving or parking.
+A special case mentioned is that of snowplows using PPP positioning to plow roads covered in so much snow the driver can't even see where they are.
 
 ### 9.3 - Machine control
 
@@ -35,7 +35,7 @@ Users can print out status reports, save important data and transfer files to he
 GNSS allows users to define a “virtual fence” around their equipment and property for the purpose of automatically raising an alarm when equipment is removed, then providing equipment tracking information to the authorities.
 
 GNSS technologies are now very common on farming equipment because these precise systems require less labour and run 24/7.
-GNSS technology are also common in construction and surface mining for the same reasons.
+GNSS technologies are also common in construction and surface mining for the same reasons.
 
 ### 9.4 - Survey
 
@@ -43,11 +43,11 @@ GNSS surveying is much quicker than traditional surveying. Using GNSS, it is pos
 
 ### 9.5 - Aerial photogrammetry
 
-Using GNSS and INS areal photos can be located and used for things Google Earth or mapping wildfires.
+Using GNSS and INS, areal photos can be located and used for applications like Google Earth or mapping wildfires.
 
 ### 9.6 - Ground mapping
 
-Infrastructure visualisation using a LiDAR combined with a GNSS+INS, a user can capture comprehensive visual information of key infrastructure, such as oil and gas pipelines.
+Infrastructure visualisation: using a LiDAR device combined with GNSS+INS, a user can capture comprehensive visual information of key infrastructure, such as oil and gas pipelines.
 
 ### 9.7 - Timing
 
@@ -57,11 +57,11 @@ As part of the position determining process, the local time of GNSS receivers be
 
 ### 9.8 - Defence
 
-The defence sector makes broad use of
-GNSS technology, including:
+The defence sector makes broad use of GNSS technology, including:
 
 - NAVIGATION:
-Using GNSS receivers, soldiers and pilots can navigate unfamiliar terrain or conduct night-time operations. Most foot soldiers now carry hand-held GNSS receivers.
+Using GNSS receivers, soldiers and pilots can navigate unfamiliar terrain or conduct night-time operations.
+Most foot soldiers now carry hand-held GNSS receivers.
 - SEARCH AND RESCUE:
 If a plane crashes and has a search and rescue beacon equipped with a GNSS receiver, it can be located more quickly.
 - RECONNAISSANCE AND MAP CREATION:

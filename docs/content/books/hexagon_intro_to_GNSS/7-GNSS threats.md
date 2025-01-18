@@ -18,7 +18,7 @@ Some jammers use high-powered transmitters to overwhelm the bands adjacent to GN
 
 GNSS receivers can use several methods to protect against interference and jamming:
 
-- Signal filtering is the first line of defense in many cases where both antenna's and receiver try to reduce the signal power of out-of-band signals which helps against band-adjecent jamming.
+- Signal filtering is the first line of defense in many cases where both antenna's and receiver try to reduce the signal power of out-of-band signals which helps against band-adjacent jamming.
 Some advanced GNSS receivers include tools that detect interfering signals and create filters that can reduce both in-band and out-of-band interference.
 - Multiple navigation sensors. For short-term interference, other sensors, such as IMUs, odometers or altimeters, can help the receiver bridge brief periods of GNSS outage.
 - Multi-frequency/multi-constellation GNSS makes it much harder to jam a signal on multiple different frequency's at once.
