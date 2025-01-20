@@ -19,6 +19,7 @@ The measured pseudoranges must be reduced or enlarged with exactly the same amou
 
 GPS positioning employs the principle of least squares estimation. Since the GPS observation model is **nonlinear**, this involves a **linearisation** for the unknown parameters, around an approximate position. The linearized model of observation equations reads:  
 ![](../../../images//tiberius/image6.png)
+
 Next, a **leastsquares algorithm** is used to solve this linearized model, presented in matrix-vector form, where a **Best Linear Unbiased Estimation** solution can be obtained.
 
 **NMEA** is a well-known and widely used format for storing and exchanging GPS (GNSS) Position, Velocity and Time (PVT) solutions.
@@ -52,6 +53,7 @@ The GPS pseudorange measurements contain **errors** due to:
   * and **measurement noise**
 
 ![](../../../images//tiberius/image7.png) 
+
 Local effects:
 
 * **Shadowing:** one or more satellite signals are blocked by surrounding obstacles.   
