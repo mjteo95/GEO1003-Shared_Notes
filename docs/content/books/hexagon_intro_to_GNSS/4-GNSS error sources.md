@@ -12,6 +12,7 @@ GNSS error sources are the factors that make it difficult for a GNSS receiver to
 | Multipath                | ±1 m       | A signal from the same satellite reaching a GNSS antenna via two or more paths, such as reflected off the wall of a building |
 
 ### Satellite clocks
+
 The atomic clocks within satellites are very accurate, but they do drift a small amount. This small inaccuracy (e.g. 10 nanoseconds) results in significant errors (3 meters) in the position calculated by the receiver.
 
 Therefore the clock on the satellite is monitored and compared against the even more accurate clock in the GNSS control segment (on the ground). By doing so, the satellite knows it’s offset with the control segment, and transmits that information outwards towards the user segment. By also transmitting this information the accuracy reduces down to ±2 metres, yet may vary between GNSS systems.
@@ -31,6 +32,7 @@ The GNSS ground control system continually monitors satellite orbits, and when t
 Similar to clock errors, precise ephemeris information can be downloaded from an SBAS or PPP service provider, or by using a DGNSS or RTK receiver configuration. Again, chapter 5 goes into depth.
 
 ### Ionospheric delays
+
 The ionosphere is the layer of atmosphere between 50 and 1.000 km above the Earth. This layer contains electrically charged particles called ions, which alter the transmission time of the satellite signals and can cause a significant amount of satellite position error, typically ±5 m., but it can be even higher during high ionospheric activity.
 
 **Ionospheric delay varies with solar activity, time of year, season, time of day and location.** This makes it very difficult to predict how much ionospheric delay is impacting the calculated position.
@@ -42,6 +44,7 @@ For receivers that can only track a single GNSS frequency, ionospheric models ar
 Ionospheric conditions are very similar within a local area, so the base station and rover receivers experience a very similar delay, allowing DGNSS and RTK systems to compensate for ionospheric delay.
 
 ### Tropospheric delays
+
 The troposphere is the layer of atmosphere closest to Earth. Variations in changing tropospheric delay are caused by changing humidity, temperature and atmospheric pressure.
 
 Similar to ionospheric conditions, tropospheric conditions are also very similar within a local area, thus the base station and rover receivers experience a very similar delay. This allows DGNSS and RTK systems to compensate for tropospheric delay.
@@ -49,9 +52,11 @@ Similar to ionospheric conditions, tropospheric conditions are also very similar
 GNSS receivers can also use tropospheric models to estimate the amount of error caused by tropospheric delay.
 
 ### Receiver noise
+
 Receiver noise refers to the position error caused by the GNSS receiver hardware and software. High-end GNSS receivers tend to have less receiver noise than lower-cost GNSS receivers.
 
 ### Multipath
+
 Multipath error occurs when a signal from the same satellite reaches a GNSS antenna via two or more paths, e.g. as reflected off a building. Because this reflected signal travelled further to reach the GNSS antenna, it arrives delayed. This delayed signal can cause the receiver to calculate an incorrect position.
 
 The simplest way to reduce multipath is to place the GNSS antenna in a location away from reflective surfaces, if this is not possible, the GNSS receiver and antenna must manage the multipath signals. 
