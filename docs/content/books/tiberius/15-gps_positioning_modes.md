@@ -16,6 +16,7 @@ More detailed information in the PPP-RTK Market and Technology Report, 2 \- Tech
 The carrier phase observation equation:  
 ![](../../../images/tiberius/image8.png)
 ![](../../../images/tiberius/image9.png)
+
 Nrs: the carrier phase cycle ambiguity.  
 drs: the other error sources, like atmospheric delays and satellite-related errors
 
@@ -24,10 +25,12 @@ drs: the other error sources, like atmospheric delays and satellite-related erro
 We use relative positioning and develop the model of observation equations for a short baseline. The two receivers being close together implies that the delays will be very similar, and in the sequel, we assume them to be really equal: **𝑑𝑠1 \= 𝑑𝑠2**. With the position coordinates of the reference or base station (𝑥1, 𝑦1, 𝑧1) being known, and taking the difference of measurements across the two receivers, 𝜑𝑠1,2 \= 𝜑𝑠2 − 𝜑𝑠1, we obtain:  
 ![](../../../images/tiberius/image10.png)
 ![](../../../images/tiberius/image11.png)
+
 The goal of RTK positioning is to estimate the position coordinates of the rover receiver 𝑥2, 𝑦2, 𝑧2, and this is done while keeping the reference station fixed to the given position coordinates.
 
 In the above model, the receiver clock offset parameter 𝑏*1,2* appears equally in all equations and can be removed by **taking differences between measurements**.  
 ![](../../../images/tiberius/image12.png)
+
 An adequate solution is provided by the LAMBDA method to slove multiple ambiguity parameters *N* present in the problem at the same time.
 
 ### *15.1.6 PPP*
@@ -54,6 +57,7 @@ E.g. the European EGNOS system. SBAS is a pseudorange code Differential GPS appr
 ### **15.3 Processing strategies, dynamic model and observation period**
 
 ![](../../../images/tiberius/image13.png)
+
 **Measurement Time and Accuracy**
 
 * **Static Solution:** Longer measurement durations improve accuracy for stationary receivers by averaging observations. Position accuracy is shown as a function of the measurement duration in the figure above.  
