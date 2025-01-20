@@ -113,7 +113,7 @@ nav:
       - Performance Metrics: "content/notes/wifi/performance_metrics.md"
     - Location awareness and privacy:
       - Introduction: "content/notes/privacy/intro.md"
-      - Selected Portions from the Handbook on European data protection law - 2018 Edition: "content/notes/privacy/european_data.md"
+      - Personal Data Protection in the European Union: "content/notes/privacy/european_data.md"
       - Spaces: "content/notes/privacy/spaces.md"
       - IndoorGML: "content/notes/privacy/indoorgml.md"
     - PDF version: "pdf/notes.pdf"
@@ -155,7 +155,7 @@ nav:
       - Performance Metrics: "content/notes/wifi/performance_metrics-long.md"
     - Location awareness and privacy:
       - Introduction: "content/notes/privacy/intro-long.md"
-      - Selected Portions from the Handbook on European data protection law - 2018 Edition: "content/notes/privacy/european_data-long.md"
+      - Personal Data Protection in the European Union: "content/notes/privacy/european_data-long.md"
       - Spaces: "content/notes/privacy/spaces-long.md"
       - IndoorGML: "content/notes/privacy/indoorgml-long.md"
     - PDF version: "pdf/notes-long.pdf"
