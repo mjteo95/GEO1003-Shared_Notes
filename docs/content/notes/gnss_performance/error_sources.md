@@ -15,9 +15,9 @@ The calculation is very sensible since $c \approx 3 \times 10^8 \, \text{m/s}$, 
 
 Ionospheric delay:
 
-- Is due to **free electrons** in the ionosphere
-- Is highly variable (depends on **time** and **space**).  
-- Ranges from *a few meters to hundreds of meters*.  
-- Is maximum near geomagnetic equator, around local noon and during solar maxima.  
-- Is proportional to $1 / \text{frequency}^2$.  
-- Can be estimated using two frequencies. This is why satellites emit at **L1** (1575.42 MHz) and **L2** (1227.60 MHz).  
+- Is due to **free electrons** in the ionosphere.
+- Is highly variable (depends on **time** and **space**).
+- Ranges from *a few meters to hundreds of meters*.
+- Is maximum near geomagnetic equator, around local noon and during solar maxima.
+- Is proportional to $1 / \text{frequency}^2$.
+- Can be estimated using two frequencies. This is why satellites emit at **L1** (1575.42 MHz) and **L2** (1227.60 MHz).
