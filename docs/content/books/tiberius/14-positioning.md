@@ -6,6 +6,7 @@ The GPS pseudorange measurement relates to the geometric range(distance) from sa
 
 In two dimensions, we would need to solve for **two receiver position coordinates** and **one receiver clock error**, hence in total **three unknown parameters**, so we need at least three pseudorange measurements:  
 ![](../../../images/tiberius/image4.png)
+
 The measured pseudoranges must be reduced or enlarged with exactly the same amount to **meet at one physical position**. The amount to make that happen is the **receiver clock offset**.
 
 ### **14.2 Pseudorange observation equation**
