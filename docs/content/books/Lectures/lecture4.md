@@ -16,6 +16,8 @@
 ### 1.Principal GNSS
 - signal travel time = tst - trec
 - distance = travel time * light speed(3 * 10^8 m/s)
+
+
 ![GNSS Constellation](../../../images/lecture4_gnss.png)
 
 #### Coordiantes
@@ -158,4 +160,4 @@ State Space: SSR: Proccessed error components, troposhpheric delays, satellite o
    - Faster and more reliable fix of phase ambiguities over
 longer distances
 - Resistance against atmospheric disturbances
-2. Network RTK
+2. Network RTK is still needed
