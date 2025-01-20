@@ -77,10 +77,6 @@ plugins:
 nav:
   - Concise notes:
     - Introduction: "content/notes/intro.md"
-    - Example:
-      - Introduction: "content/notes/example/intro.md"
-      - Markdown Basics: "content/notes/example/markdown_basics.md"
-      - Empty Section: "content/notes/example/empty_section.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro.md"
       - GPS segments: "content/notes/how_does_gnss_work/segments.md"
@@ -123,10 +119,6 @@ nav:
     - PDF version: "pdf/notes.pdf"
   - Long notes:
     - Introduction: "content/notes/intro-long.md"
-    - Example:
-      - Introduction: "content/notes/example/intro-long.md"
-      - Markdown Basics: "content/notes/example/markdown_basics-long.md"
-      - Empty Section: "content/notes/example/empty_section-long.md"
     - How does GNSS work?:
       - Introduction: "content/notes/how_does_gnss_work/intro-long.md"
       - GPS segments: "content/notes/how_does_gnss_work/segments-long.md"
