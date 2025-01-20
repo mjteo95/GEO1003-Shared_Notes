@@ -17,32 +17,33 @@ Positioning techniques may be categorized in three ways:
     3.2 In remote positioning, the position is calculated elsewhere and the cooperation of the object tracked is not necessarily required,which is useful for covert surveillance.
 
 A **navigation system**, sometimes known as a navigation aid, is a device that determines position and velocity automatically
-Similarly, a positioning system determines position. 
+Similarly, a positioning system determines position.
 An **integrated navigation** system determines position and velocity using more than one technology.
 
 A **navigation sensor** is a device used to measure a property from which the navigation system computes its outputs; examples include accelerometers, gyroscopes, and radio navigation receivers.
 
 The output of a navigation system or technique is known as the **navigation solution**. It comprises the position and velocity of the navigating object. Some navigation systems also provide some or all of the attitude (including heading), acceleration, and angular rate. Similarly, the position solution is just the position of the object.
 
-- 2D position: For navigation of cars, trains, ships, and outdoor pedestrians, the vertical component of position and velocity is not required, 
+- 2D position: For navigation of cars, trains, ships, and outdoor pedestrians, the vertical component of position and velocity is not required,
 - 3Dposition: Other applications, such as air, space, underwater, and indoor pedestrian navigation, require threedimensional positioning.
 
 For navigation, it is assumed that the **user**, which may be a person or computer software (e.g., route guidance) is part of the object to be positioned. Thus, the user’s navigation solution is the same as that of the object. The parts of the navigation system located on the object to be positioned (sometimes the entire system) are known as **user equipment**.
 
-The terms position and **location** are nominally interchangeable, but are normally used to denote two different concepts. 
-1. position is expressed **quantitatively** as a set of numerical coordinates, 
+The terms position and **location** are nominally interchangeable, but are normally used to denote two different concepts.
+
+1. position is expressed **quantitatively** as a set of numerical coordinates,
 2. location is expressed **qualitatively**, such as a city, street, building, or room.
 
-A navigation system will calculate a position, whereas a person, signpost, or address will describe a location. A map or geographic information system (GIS) matches locations to positions, so it is a useful tool for converting between the two. 
+A navigation system will calculate a position, whereas a person, signpost, or address will describe a location. A map or geographic information system (GIS) matches locations to positions, so it is a useful tool for converting between the two.
 
 Some authors use the term **localization** instead of positioning, particularly for short-range applications.
 
-All navigation and positioning techniques are based on one of two fundamental methods: 
+All navigation and positioning techniques are based on one of two fundamental methods:
 
 1. Position fixing uses identifiable external information to determine position directly. This may be signals or environmental
 features; Signals are usually transmitted by radio (e.g., GNSS), but may also be acoustic, ultrasound, optical, or infrared. Environmental features include buildings or parts thereof, signs, roads, rivers, terrainheight, sounds, smells, and even variations in the magnetic and gravitational fields.
 
-    Position may be inferred directly by matching the signals receivable and/or features observable at a given location with a database.  Alternatively, more distant landmarks at known positions may be selected and their distance and/or direction from the user measured. 
+    Position may be inferred directly by matching the signals receivable and/or features observable at a given location with a database.  Alternatively, more distant landmarks at known positions may be selected and their distance and/or direction from the user measured.
     A landmark may be a transmitter (or receiver) of signals or an environmental feature. A landmark installed specifically for navigation is known as an **aid to navigation (AtoN)**.
 
 2. Dead reckoning measures the distance and direction traveled. A dead-reckoning system, such as an INS, may be self-contained aboard the navigating vehicle, requiring no external infrastructure. However, environmental features may also be used for dead reckoning by comparing measurements of the same landmark at different times.

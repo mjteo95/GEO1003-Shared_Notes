@@ -11,6 +11,7 @@
 -->
 
 ## Jamming and Spoofing
+
 There are multiple mays a GNSS signal may be threatened, jamming and spoofing being intentional attacks.
 
 ### Jamming

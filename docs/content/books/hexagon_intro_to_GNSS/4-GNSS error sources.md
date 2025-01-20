@@ -1,4 +1,5 @@
 ## 4 - GNSS error sources
+
 GNSS error sources are the factors that make it difficult for a GNSS receiver to calculate an exact position. These sources are:
 
 | Contributing Source     | Error Range | Cause                                                                                                         |

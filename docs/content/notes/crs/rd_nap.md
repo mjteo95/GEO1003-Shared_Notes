@@ -83,7 +83,7 @@ Implementation variant 2 includes the datum transformation in the correction gri
 
    3.1 Variant 1, transformation from ellipsoidal geographic Bessel coordinates of a point of interest to ellipsoidal geographic ETRS89 coordinates. Variant 2 the datum transformation is included in the correction grid  
 
-   3.2 the ellipsoidal geographic Bessel coordinates of a point of interest must be converted to geocentric Cartesian Bessel coordinates 
+   3.2 the ellipsoidal geographic Bessel coordinates of a point of interest must be converted to geocentric Cartesian Bessel coordinates
 
    3.3 The 3D similarity transformation must be applied to the geocentric Cartesian Bessel coordinates of the point of interest to obtain geocentric Cartesian ETRS89 coordinates.  
 
