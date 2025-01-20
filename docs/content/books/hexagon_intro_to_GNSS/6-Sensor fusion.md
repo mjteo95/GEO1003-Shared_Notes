@@ -17,6 +17,7 @@ The accelerometers measure linear acceleration, and the gyroscopes measure rotat
 The INS translates this angular solution into a local attitude (roll, pitch and azimuth) solution, which it can provide in addition to the position and velocity.
 
 Naturally,  INS systems have their own downsides:
+
 - the position drifts relatively quickly because of the buildup of inaccuracies over time
 - the position - more like location -  measurements happen in a local reference frame from a starting point which has to be provided to the INS.
 
@@ -25,6 +26,7 @@ When the GNSS conditions are good (line of sight to several satellites), the GNS
 When the GNSS conditions become poor, the INS provides the position and navigation until the GNSS conditions improve.
 
 GNSS is not the only useful input to aid inertial navigation. For different environments, different sensors can also be added to aid the solution.
+
 - Odometer: a Distance Measurement Instrument (DMI) provides another independent measurement of displacement and velocity
 - Vision-aided navigation: imagery is used to provide position information in one of two ways.
   - Known surveyed camera targets can be used to generate an absolute position

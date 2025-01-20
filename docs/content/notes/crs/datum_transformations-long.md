@@ -1,16 +1,18 @@
 ## Datum and Transformations
 
 ### Transformations and conversions
+
 The International Association of Oil and Gas Producers (EPSG) used a _de facto_ standard instead of an ISO standard. The EPSG collects all the different reference systems and their transformations. There are two different steps when working with 3D data. First, the coordinates need to be converted to a new coordinate system, after which the height values are transformed.
 ![Map of coordinate conversion and datum transformation](../../../images/Transformations_and_conversions.png){width:"50%"}
 
 Note, that a geoid is a stochastic height transformation and not a conversion. It uses in total 14 parameters:
+
 * 7 parameters;
 
 > 3 Translations \[m\];
- > 
+ >
 > 3 Rotations \[“\];
- > 
+ >
 > 1 Scale factor \[ppm\];
 
 * 7 rates and reference epoch (t0).
@@ -25,6 +27,7 @@ A big difference between datum transformations and coordinate conversions is tha
 3. **There is no third party that has determined the transformation parameters, and you as a user, have to estimate them using at least three common points in both systems**. In this case you will need coordinates from the other reference system. Keep in mind that the coordinates from the external reference system should all come from the same realization, or, reference frame.
 
 ## Datums
+
 When people in the field of Geomatics are talking about height, they can reference multiple different definitions of height:
 
 * **Geometric**: Ellipsoidal height (max. MSL deviation ±150m)

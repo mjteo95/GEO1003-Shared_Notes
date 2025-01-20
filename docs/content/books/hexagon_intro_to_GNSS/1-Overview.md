@@ -5,6 +5,7 @@
 ![GNSS segments](../../../images/screenshots%20Hexagon%20book/GNSS%20segments.png)
 
 GNSS (Global Navigation Satellite System) = collection of satellite positioning systems, called “constellations,” from various countries that are in operation or planned.
+
 - GPS (United States)
 - GLONASS (Russia)
 - Galileo (European Union)

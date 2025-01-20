@@ -37,7 +37,7 @@
 
 ![GPS navigation message](../../../images/screenshots%20Hexagon%20book/GPS%20navigation%20message.png)
 
-#### GPS transmission scheme is chosen for many good reasons:
+#### GPS transmission scheme is chosen for many good reasons
 
 - GPS receivers can recover very weak signals using very small antennas. This keeps the receiver cost low
 - Multi-frequency operations allows for ionospheric compensation, since ionospheric delays vary with frequency
@@ -131,7 +131,8 @@ Various errors affect the accuracy of GNSS positioning, such as atmospheric dela
 
 - The geometry of the visible satellites affects accuracy. Poor satellite geometry (e.g. satellites clustered together) increases DOP, leading to less precise positioning. Good geometry (satellites spread out) reduces DOP and improves accuracy.
 
-`INACCURACY OF COMPUTED POSITION = DOP x Inaccuracy of range measurement` 
+`INACCURACY OF COMPUTED POSITION = DOP x Inaccuracy of range measurement`
+
 - If DOP is very high, the inaccuracy of the computed position will be much larger than the inaccuracy of the range measurement
 
 ![Dilution of precision (poor satellite geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28poor%20satellite%20geometry%29.png)
@@ -139,6 +140,7 @@ Various errors affect the accuracy of GNSS positioning, such as atmospheric dela
 ![Dilution of precision (improved geometry)](../../../images/screenshots%20Hexagon%20book/Dilution%20of%20precision%20%28improved%20geometry%29.png)
 
 Types of DOP:
+
 - HDOP (Horizontal Dilution of Precision)
 - VDOP (Vertical Dilution of Precision)
 - PDOP (Position Dilution of Precision) DOP values impact accuracy, with high DOP leading to poor precision
@@ -148,5 +150,4 @@ Impact of satellite position: DOP values change with time of day and location. F
 
 - In short: GNSS user equipment provides the computed position and time to the end-user application for use in navigation, surveying, mapping and more.
 - Range from basic navigation to high-precision solutions for surveying, military, and autonomous systems.
-- GNSS is often combined with other sensors like inertial technology for enhanced reliability 
-
+- GNSS is often combined with other sensors like inertial technology for enhanced reliability

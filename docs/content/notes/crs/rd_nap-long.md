@@ -18,14 +18,12 @@ The **Stelsel van de Rijksdriehoeksmeting (RD)** was created using triangulation
 
 To prevent confusion between the x-coordinates and y-coordinates, and to obtain always positive coordinates, the origin of the coordinates was shifted 155 km to the West and 463 km to the South (**False Easting and Northing**). This resulted in only positive x- and y-coordinates, where the y-coordinates are always larger than the x-coordinates.
 
-
 #### Normaal Amsterdams Peil (NAP)
 
 The national height system on land and internal waters in the Netherlands is called **Normaal Amsterdams Peil (NAP)** and is based on the average summer flood in 1683-1684. Maintenance is based on point stability and it uses the NLGEO2018 geoid for GNSS measurements. Ellipsoidal heights in ETRS89 can be transformed with the quasi-geoid model to NAP with a precision higher than ETRS89 coordinates obtained with most GNSS measurements.
 Values range between 39.1 – 48.7m. The NAP is a legal responsibility of Rijkswaterstaat
 
 For parts of the Noordzee however, the NAP cannot be used. Instead, they use the **Lowest Astronomical Tide** (LAT), which is the water depth in Worst-case astronomical conditions and average meteorological conditions.
-
 
 ### 1. Coordinate transformation
 
@@ -151,7 +149,7 @@ The second step of the inverse RD map projection is an inverse Gauss conformal p
 ##### 3.2.1 Direct correction
 
 The ellipsoidal geographic coordinates of a point of interest obtained by the inverse map projection, are real Bessel coordinates. Due to the error propagation of measurement noise of the original (1888–1928) measurements of RD, the real Bessel coordinates must be corrected up to 0.25 m to obtain pseudo Bessel coordinates. For implementation variant 2, the datum transformation is included in the correction grid (Section 3.2.2).
-The corrections are obtained from a regular grid of values for latitude correction and a regular grid of values for longitude correction, using bilinear interpolation (Formula 2.3.1). 
+The corrections are obtained from a regular grid of values for latitude correction and a regular grid of values for longitude correction, using bilinear interpolation (Formula 2.3.1).
 
 To transform the point of interest, the nearest NW, NE, SW and SE grid values are required
 The horizontal ellipsoidal geographic real Bessel coordinates of the point of interest must be corrected to pseudo Bessel coordinates (Formula 3.2.1) using the interpolated correction grid value of the point of interest.  
