@@ -78,7 +78,7 @@ According to WP29, the use of **geolocation of employees** can find legal basis 
 
 In theses situations, due to the dependency of the employee, the consent is not freely given and is therefore not valid.
 
-In Italy, remote control of employees if it respects employee **freedom** and **dignity** and **avoids excessive, prolonged, and indiscriminate surveillance** (e.g., allowing employees to turn off trackers). It must be negotiated with union representatives first and can only be used for:
+In Italy, remote control of employees must respect employee **freedom** and **dignity** and **avoids excessive, prolonged, and indiscriminate surveillance** (e.g., allowing employees to turn off trackers). It must be negotiated with union representatives first and can only be used for:
 
 * Organisational and production needs
 * Workplace safety
@@ -104,7 +104,7 @@ The collection of location data shall be **proportionate** to the purposes by mo
 
 The COVID-19 pandemic has led to the development of **Digital Contact Tracing** (DCT) apps. These apps use tracking technologies to monitor the simultaneous presence of individuals in the same place. There are two main ways to implement DCT:
 
-* Using **proximity data**, usually with Bluetooth Low Energy (BLE) beacons. The absolute position is unknown data is stored locally on the device unless a user is tested positive. This approach was used by Trace Together in Singapore.
+* Using **proximity data**, usually with Bluetooth Low Energy (BLE) beacons. The absolute position is unknown and data is stored locally on the device unless a user is tested positive. This approach was used by Trace Together in Singapore.
 * Using **location data**, usually with GNSS. The absolute position is known, and the data is stored on a central server. This approach was used by WeChat and Alipay in China.
 
 In Europe, the European Commission and the European Data Protection Board (EDPB) have expressed a preference for BLE for privacy reasons. The EDPB also gave criteria for the adoption of DCT apps:
