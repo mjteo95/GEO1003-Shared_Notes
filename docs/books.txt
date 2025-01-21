@@ -21,9 +21,9 @@ content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md
 content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md
 content/books/ppp-rtk_market_and_technology_report/6_conclusion.md
 content/books/RDNAPTRANS/title.md
-content/books/RDNAPTRANS/introduction.md
-content/books/RDNAPTRANS/2-transformationETRS89toRD-NAP.md
-content/books/RDNAPTRANS/3-transformationRD-NAPtoETRS89.md
+content/books/RDNAPTRANS/1-introduction.md
+content/books/RDNAPTRANS/2-transformation_ETRS89_to_RD-NAP.md
+content/books/RDNAPTRANS/3-transformation_RD-NAP_to_ETRS89.md
 content/books/indoor_books/title.md
 content/books/indoor_books/meshlium_smartphone_detection.md
 content/books/indoor_books/sithole_position_location_plane_area_indoor.md
