@@ -66,3 +66,4 @@ Indoor environments allow for Wi-Fi signals to travel in ways which deviate from
 Modern smart phones possess accelerometers acting as inertia sensors. Technologies like the pedestrian dead reckoning (PDR) have integrated an algorithm which can detect the number of steps taken into a certain direction, monitoring the change in signal strength. 
 
 Geomagnetism, exploiting earths natural magnetic field, has been proposed to enhance positioning indoors. Surrounding steel structures create a characteristic amendment to the measured intensity and vector which can be used for a footprint. 
+
