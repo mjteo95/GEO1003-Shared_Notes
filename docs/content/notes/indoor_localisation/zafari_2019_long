@@ -1,0 +1,46 @@
+## Localisation techniques
+
+### Received Signal Strength Indicator (RSSI)
+- RSS: actual signal power strength recorded by the receiver, in decibel-milliwatts (dBm) or milliWatts(mW)
+  - Inverse proportionality between RSSI and transmitter-receiver distance
+- RSSI: RSS indicated in arbitrary units
+- RSSI localisation uses trilateration with at least 3 transmitters
+- Advantages:
+  - Simple and cost-efficient due to low hardware requirements
+- Disadvantages:
+  - Poor localization accuracy, especially in non-Line-of-Sight situations
+  - Additional signal attenuation from transmission through walls, obstacles, and multipath
+  - Potentially high fluctuation over time
+
+### Channel State Information (CSI)
+- Captures amplitude and phase response across different frequencies
+- Higher granularity than RSSI, gives more information to reduce multipath and provide more consistent measurements
+- Overall higher localisation accuracy than RSSI
+
+### Fingerprinting/Scene Analysis
+- Discrete estimation of user location based on grid
+  - Delicate balance between size of grid (and corresponding resolution), and the signal variation error
+  - Eg: impossible to estimate the correct point if the difference in RSSI values between each grid cell is less than the uncertainty range of the signal strength
+- Offline phase: collect RSSI/CSI measurements to form a fingerprint map
+- Online phase: compare real-time measurements with fingerprint map using algorithms:
+  - Probabilistic method: use histogram/kernel to calculate probability of receiver being in $x$ grid of fingerprint map
+  - Artificial Neural Network: train a neural network (eg: Multi-Layer Perceptron) and provide real-time input with weights
+  - k-Nearest Neighbours: average nearest measurement patches to estimate the location
+  - Support Vector Machine (SVM): machine learning method applicable to indoor localisation
+
+### Angle of Arrival (AoA)
+- Receiver's antennae array estimates the angle of transmitted signal by the time difference of arrival at individual parts of the array
+- Advantages:
+  - Receiver location can be estimated with just 3 transmitters in a 3D environment
+  - Accurate estimation when transmitter-receiver distances are small
+- Disadvantages:
+  - Slight error in angle calculation translates to huge error in position determination
+    - Thus not accurate at larger transmitter-receiver distances
+  - Line of Sight for angle calculation is hard to obtain due to indoor multipath effects
+
+### Time of Flight (ToF)
+- Calculate physical transmitter-receiver distance using signal propagation time and speed of light
+- Trilateration is used similar to RSSI to estimate position
+- Advantages:
+- Disadvantages:
+  - 
