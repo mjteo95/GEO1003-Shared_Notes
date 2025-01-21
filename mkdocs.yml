@@ -167,8 +167,6 @@ nav:
       - 14 - Positioning: "content/books/tiberius/14-positioning.md"
       - 15 - GPS positioning modes: "content/books/tiberius/15-gps_positioning_modes.md"
       - 16 - GNSS and applications: "content/books/tiberius/16-gnss_and_applications.md"
-    - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview:
-      - 1 - Introduction: "content/books/shixiong_xia/notes.md"
     - Hexagon - Intro to GNSS:
       - 1 - Overview: "content/books/hexagon_intro_to_GNSS/1-Overview.md"
       - 2 - Basic GNSS concepts: "content/books/hexagon_intro_to_GNSS/2-Basic GNSS concepts.md"
@@ -192,6 +190,7 @@ nav:
     - Articles about Indoor Positioning:
       - Meshlium Technical Guide - Smartphone Detection: "content/books/indoor_books/meshlium_smartphone_detection.md"
       - Position Location Place and Area - An Indoor Perspective: "content/books/indoor_books/sithole_position_location_plane_area_indoor.md"
+      - Indoor Fingerprint Positioning Based on Wi-Fi - An Overview: "content/books/indoor_books/shixiong_xia_indoor_fingerprinting.md"
     - Lectures:
       - Lecture 1 - Introduction: "content/books/Lectures/lecture1.md"
       - Unknown Title: "content/books/Lectures/lecture2and3.md"
