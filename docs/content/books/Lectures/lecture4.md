@@ -65,7 +65,7 @@
 ![RTK_Accuracy](../../../images/RTK_accuracy.png)
 6. RTK Limitations
 if too far from reference, the error is no longer acceptable
-![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png.png)
+![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png)
 7. Network GNSS
    - Beter Coverage
      - multiple reference stations from a network, beter coverage than single based station, thus reliable error handling
