@@ -1,6 +1,6 @@
-## **14 Positioning**
+## 14 - Positioning
 
-### **14.1 Geometric interpretation**
+### 14.1 - Geometric interpretation
 
 The GPS pseudorange measurement relates to the geometric range(distance) from satellite to receiver but is also caused by the **receiver clock offset**. The receiver clock offset is the **same** for all pseudoranges measured by the receiver at a specific time.
 
@@ -9,14 +9,14 @@ In two dimensions, we would need to solve for **two receiver position coordinate
 
 The measured pseudoranges must be reduced or enlarged with exactly the same amount to **meet at one physical position**. The amount to make that happen is the **receiver clock offset**.
 
-### **14.2 Pseudorange observation equation**
+### 14.2 Pseudorange observation equation
 
 ![](../../../images/tiberius/image5.png)
 
-* 𝑏𝑟: is **positive** if the receiver clock is ahead of GPS system time, and the measured pseudoranges are **‘too long’**.  
+* $br$: is **positive** if the receiver clock is ahead of GPS system time, and the measured pseudoranges are **‘too long’**.  
 * ers: unavoidable random measurement error
 
-### **14.3 Positioning: parameter estimation**
+### 14.3 Positioning: parameter estimation
 
 GPS positioning employs the principle of least squares estimation. Since the GPS observation model is **nonlinear**, this involves a **linearisation** for the unknown parameters, around an approximate position. The linearized model of observation equations reads:  
 ![](../../../images//tiberius/image6.png)
@@ -25,7 +25,7 @@ Next, a **leastsquares algorithm** is used to solve this linearized model, prese
 
 **NMEA** is a well-known and widely used format for storing and exchanging GPS (GNSS) Position, Velocity and Time (PVT) solutions.
 
-### **14.4. Reference systems**
+### 14.4 - Reference systems
 
 By default, **GPS positioning** yields Cartesian coordinates (𝑥, 𝑦, 𝑧) in **WGS84**.
 
@@ -34,7 +34,7 @@ In **differential mode**, the position coordinates:
 * Are generally provided in **a local or regional reference system**(e.g. ETRS89 in Europe).  
 * For the user receiver is in the same reference system as the position coordinates of the base, or reference station.
 
-### **14.5 GPS accuracy and error sources**
+### 14.5 - GPS accuracy and error sources
 
 The quality of the GPS position solution is largely dependent on: 
 
@@ -61,6 +61,6 @@ Local effects:
 * **Signal reflections:** signals arrive at the receiver after bouncing off an object.  
 * **Multipath:**  both the direct and reflected signals arrive at the receiver
 
-### **14.6. Standalone positioning: example**
+### 14.6 - Standalone positioning: example
 
 *Nothing interesting.*
