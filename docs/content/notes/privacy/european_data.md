@@ -14,14 +14,16 @@ A person who's data is being processed is a '**data subject**'.
 
 Information that can be used to identify a person includes:
 
-- Name
-- Identification number
-- Location data
-- Online identifier
-- Vehicle registration number
-- Physical characteristics
-- Genetic data
-- Cultural identity
+* Name
+* Identification number
+* Location data
+* Online identifier
+* Vehicle registration number
+* Physical characteristics
+* Genetic data
+* Cultural identity
+
+The **metadata** should also be considered, as it sometimes contains even more information. For example, the **metadata of a picture** taken with a smartphone can contain the GPS coordinates, the date and time, the author, the camera model and the settings of the camera.
 
 The concept of identifiability is explained by the Recital 26 of the GDPR. This approach is called the **risk-based approach**:
 
@@ -55,16 +57,16 @@ In Article 4 of the GDPR, the concept of **pseudonymisation** is defined as:
 
 **Data processing** covers a large number of possible actions. Examples include:
 
-- collection
-- organisation
-- structuring
-- storage
-- alteration
-- retrieval
-- usage
-- disclosure
-- restriction
-- erasure
+* collection
+* organisation
+* structuring
+* storage
+* alteration
+* retrieval
+* usage
+* disclosure
+* restriction
+* erasure
 
 Automated and non-automated processes both count as data processing.
 
@@ -107,9 +109,9 @@ Controllers are obligated to take appropriate measures to ensure that data subje
 
 Data cannot be processed further in a way that is **not compatible with the original purpose**, although exceptions are possible if the new purpose is either:
 
-- **Archiving** purposes in the public interest.
-- **Scientific** or **historical** research.
-- **Statistical** purposes.
+* **Archiving** purposes in the public interest.
+* **Scientific** or **historical** research.
+* **Statistical** purposes.
 
 #### The Data Minimisation Principle
 
@@ -130,3 +132,28 @@ Controllers of personal data are required to implement appropriate **technical o
 #### The Accountability Principle
 
 Controllers and processors are required to **actively and continuously** implement measures to promote and safeguard **data protection** in their processing activities.
+
+### Specific to Location Data
+
+#### Sources of Location Data
+
+Location data comes from a variety of sources, including:
+
+* **GNSS**
+* **Wi-Fi**
+* **Cell Phone Tracking**
+* **Bluetooth Beacons transmitters**
+
+The **diversity of sensors** inside mobile devices (microphone, camera, infrared, GPS, Bluetooth, accelerometer, Wi-Fi, fingerprint sensor, etc.) and the widespread use of various **mobile apps** make it easy to collect and combine a wide range of data. This data can then be combined with other data sources to **infer private information** about the user.
+
+All this data is accessed by apps through APIs provided by the **operating system** (OS), which also exploits the data for its own purposes.
+
+#### European Framework
+
+#### Some Selected Cases
+
+##### Location of Employees
+
+##### Smart Vehicles
+
+##### Contact Tracing
