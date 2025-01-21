@@ -11,7 +11,7 @@ Improvements in GNSS applications by upgrades of and additions to the available 
 * Both the availability of more radio frequencies and satellites
 
 **Challenge for multi-GNSS positioning**  
-**Inter-System Biases (ISB):** 
+**Inter-System Biases (ISB):**
 
 * Different GNSS may have an offset in time with respect to each other due to maintenance.
 * These biases must be studied, and if possible corrected or eliminated.

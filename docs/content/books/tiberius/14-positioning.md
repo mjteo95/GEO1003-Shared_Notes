@@ -4,22 +4,24 @@
 
 The GPS pseudorange measurement relates to the geometric range(distance) from satellite to receiver but is also caused by the **receiver clock offset**. The receiver clock offset is the **same** for all pseudoranges measured by the receiver at a specific time.
 
-In two dimensions, we would need to solve for **two receiver position coordinates** and **one receiver clock error**, hence in total **three unknown parameters**, so we need at least three pseudorange measurements:  
-![](../../../images/tiberius/image4.png)
+In two dimensions, we would need to solve for **two receiver position coordinates** and **one receiver clock error**, hence in total **three unknown parameters**, so we need at least three pseudorange measurements:
+
+$$\underline{\varphi}_r^s = \sqrt{(x^s - x_r)^2 + (y^s - y_r)^2 + (z^s - z_r)^2} + b_r + d_r^s + \lambda N_r^s + \underline{e}_r^s$$
 
 The measured pseudoranges must be reduced or enlarged with exactly the same amount to **meet at one physical position**. The amount to make that happen is the **receiver clock offset**.
 
 ### 14.2 Pseudorange observation equation
 
-![](../../../images/tiberius/image5.png)
+![Error sources and ranges](../../../images/tiberius/image5.png){width=80%}
 
 * $br$: is **positive** if the receiver clock is ahead of GPS system time, and the measured pseudoranges are **‘too long’**.  
 * ers: unavoidable random measurement error
 
 ### 14.3 Positioning: parameter estimation
 
-GPS positioning employs the principle of least squares estimation. Since the GPS observation model is **nonlinear**, this involves a **linearisation** for the unknown parameters, around an approximate position. The linearized model of observation equations reads:  
-![](../../../images//tiberius/image6.png)
+GPS positioning employs the principle of least squares estimation. Since the GPS observation model is **nonlinear**, this involves a **linearisation** for the unknown parameters, around an approximate position. The linearized model of observation equations reads:
+
+![Linearized model of observation equations](../../../images//tiberius/image6.png){width=80%}
 
 Next, a **leastsquares algorithm** is used to solve this linearized model, presented in matrix-vector form, where a **Best Linear Unbiased Estimation** solution can be obtained.
 
@@ -36,7 +38,7 @@ In **differential mode**, the position coordinates:
 
 ### 14.5 - GPS accuracy and error sources
 
-The quality of the GPS position solution is largely dependent on: 
+The quality of the GPS position solution is largely dependent on:
 
 * The number of **available satellites** (enough satellites are visible)  
 * Their **geometry** with respect to the user (On all sides of the receiver at high and low elevation angles)
@@ -47,17 +49,17 @@ The accuracy of standalone positioning with GPS is in the order of **5-15 meters
 
 The GPS pseudorange measurements contain **errors** due to:
 
-* Inaccurate satellite orbit and clock information,   
-* delays along the path of the radio signal:   
+* Inaccurate satellite orbit and clock information,
+* delays along the path of the radio signal:
   * **atmospheric delays** (ionosphere and troposphere),  
-  * **local effects** including multipath,   
+  * **local effects** including multipath,
   * and **measurement noise**
 
-![](../../../images//tiberius/image7.png) 
+$$\underline{p}_r^s = \sqrt{(x^s - x_r)^2 + (y^s - y_r)^2 + (z^s - z_r)^2} + b_r + \underline{e}_r^s$$
 
 Local effects:
 
-* **Shadowing:** one or more satellite signals are blocked by surrounding obstacles.   
+* **Shadowing:** one or more satellite signals are blocked by surrounding obstacles.
 * **Signal reflections:** signals arrive at the receiver after bouncing off an object.  
 * **Multipath:**  both the direct and reflected signals arrive at the receiver
 
