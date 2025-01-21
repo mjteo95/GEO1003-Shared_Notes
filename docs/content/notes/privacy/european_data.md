@@ -14,14 +14,16 @@ A person who's data is being processed is a '**data subject**'.
 
 Information that can be used to identify a person includes:
 
-- Name
-- Identification number
-- Location data
-- Online identifier
-- Vehicle registration number
-- Physical characteristics
-- Genetic data
-- Cultural identity
+* Name
+* Identification number
+* Location data
+* Online identifier
+* Vehicle registration number
+* Physical characteristics
+* Genetic data
+* Cultural identity
+
+The **metadata** should also be considered, as it sometimes contains even more information. For example, the **metadata of a picture** taken with a smartphone can contain the GPS coordinates, the date and time, the author, the camera model and the settings of the camera.
 
 The concept of identifiability is explained by the Recital 26 of the GDPR. This approach is called the **risk-based approach**:
 
@@ -55,16 +57,16 @@ In Article 4 of the GDPR, the concept of **pseudonymisation** is defined as:
 
 **Data processing** covers a large number of possible actions. Examples include:
 
-- collection
-- organisation
-- structuring
-- storage
-- alteration
-- retrieval
-- usage
-- disclosure
-- restriction
-- erasure
+* collection
+* organisation
+* structuring
+* storage
+* alteration
+* retrieval
+* usage
+* disclosure
+* restriction
+* erasure
 
 Automated and non-automated processes both count as data processing.
 
@@ -107,9 +109,9 @@ Controllers are obligated to take appropriate measures to ensure that data subje
 
 Data cannot be processed further in a way that is **not compatible with the original purpose**, although exceptions are possible if the new purpose is either:
 
-- **Archiving** purposes in the public interest.
-- **Scientific** or **historical** research.
-- **Statistical** purposes.
+* **Archiving** purposes in the public interest.
+* **Scientific** or **historical** research.
+* **Statistical** purposes.
 
 #### The Data Minimisation Principle
 
@@ -130,3 +132,69 @@ Controllers of personal data are required to implement appropriate **technical o
 #### The Accountability Principle
 
 Controllers and processors are required to **actively and continuously** implement measures to promote and safeguard **data protection** in their processing activities.
+
+### Specific to Location Data
+
+#### Sources of Location Data
+
+Location data comes from a variety of sources, including:
+
+* **GNSS**
+* **Wi-Fi**
+* **Cell Phone Tracking**
+* **Bluetooth Beacons transmitters**
+
+The **diversity of sensors** inside mobile devices (microphone, camera, infrared, GPS, Bluetooth, accelerometer, Wi-Fi, fingerprint sensor, etc.) and the widespread use of various **mobile apps** make it easy to collect and combine a wide range of data. This data can then be combined with other data sources to **infer private information** about the user.
+
+All this data is accessed by apps through APIs provided by the **operating system** (OS), which also exploits the data for its own purposes.
+
+#### European Framework
+
+For location data, besides the GDPR, the European legal framework also encompasses the **e-Privacy Directive**, which establishes rules to ensure privacy and personal data protection in the electronic communications sector.
+
+The Article 2(c) of the e-Privacy Directive defines **location data** as:
+
+> \[A\]ny data processed in an electronic communications network or by an electronic communications service, indicating the **geographic position** of the terminal equipment of a user of a publicly available electronic communications service
+>
+> *e-Privacy Directive, Article 2(c)*
+
+The Recital 14 the specifies that such data:
+
+> \[M\]ay refer to the *latitude, longitude and altitude* to the user’s terminal equipment, to the *direction of travel*, to the *level of accuracy* of the location information, to the *identification* of the network cell in which the terminal equipment is located at a certain point in time and to the *time* the location information was recorded
+>
+> *e-Privacy Directive, Recital 14*
+
+The Article 9 of the GDPR also establishes **special categories of personal data** which are particularly sensitive, such as racial or ethnic origin, political opinions, religious or philosophical beliefs, genetic biometric and health data or data concerning a natural person’s sex life or sexual orientation. Location data may help infer such data, making it particularly sensitive.
+
+#### Some Selected Cases
+
+##### Location of Employees
+
+According to WP29, the use of **geolocation of employees** can find legal basis in the **legitimate interest** of the employer, who is the data controller. However, the employer must be able to demonstrate the **necessity** of the processing and the **balance of the interests** of the employer and the employees. The employer must also inform the employees about the processing of their location data. In it Opinion 8/2001, WP29 states that consent can hardly be a legal basis due to the **dependency of the employee**, making the consent **not freely given**.
+
+In Italy, remote control of employees is limited to **specific cases** and **specific conditions** (organisational and production needs, workplace safety, protection of company assets) and must be negotiated with **union representatives** first.
+
+In France, it is only allowed for control services related to the vehicle usage, ensuring the security of employees and goods and checking working hours. It requires a prior **Data Protection Impact Assessment** (DPIA).
+
+##### Smart Vehicles
+
+Smart vehicles are equipped with a wide range of sensors and communication systems, which can collect a wide range of data, including location data. This location data is particularly sensitive, as it can reveal the **habits and preferences** of the driver. The **data controller** — which can be the vehicle producer, the equipment manufacturers or the service providers — shall **make the data subject aware** of how the data is processed, i.e. the frequency of collection, the possibility to shut down the tracking system and the third parties that can access the data.
+
+The collection of location data shall be **proportionate** to the purposes by modulating the *frequency* and the *precision*. The purpose also influences the length of the data retention (data minimisation principle). For security reasons, personal data should also be **processed internally** as far as possible, and only sent to third parties when absolutely necessary.
+
+##### Contact Tracing
+
+**Digital Contact Tracing** (DCT) apps use tracking technologies to monitor the simultaneous presence of individuals in the same place. There are two main ways to implement DCT:
+
+* Using **proximity data**, usually with *Bluetooth Low Energy* (BLE) beacons. The absolute position is unknown and data is stored locally on the device unless a user is tested positive. This approach was used by Trace Together in Singapore.
+* Using **location data**, usually with GNSS. The absolute position is known, and the data is stored on a central server. This approach was used by WeChat and Alipay in China.
+
+In Europe, the European Commission and the European Data Protection Board (EDPB) have expressed a preference for BLE for privacy reasons. The EDPB also gave criteria for the adoption of DCT apps:
+
+* **Voluntary** use
+* **DPIA** before development
+* Predilection for **proximity** data
+* Disclosure of information on who the infected has been in close contact with
+* Data **minimisation** and data **protection** by design
+* **Encrypted identifiers** generated by BLE
+* **Anonymity** of third users involved

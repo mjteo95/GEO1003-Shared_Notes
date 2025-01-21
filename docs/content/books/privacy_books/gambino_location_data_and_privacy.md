@@ -4,16 +4,16 @@
 
 ### 1 - About Location Data
 
-The most used methods for positioning are:
+Location data comes from a variety of sources, including:
 
-* GNSS, using satellites to get an accurate position
-* Wi-Fi, using only the detection of the MAC address of close-by access points
-* Cell Phone Tracking, using the cell phone towers of telecommunication operators to get an approximate position
-* Bluetooth Beacons transmitters, using the detection of the MAC address of close-by beacons
+* **GNSS**, using satellites to get an accurate position
+* **Wi-Fi**, using only the detection of the MAC address of close-by access points
+* **Cell Phone Tracking**, using the cell phone towers of telecommunication operators to get an approximate position
+* **Bluetooth Beacons transmitters**, using the detection of the MAC address of close-by beacons
 
-Modern devices use a combination of these methods to get a more accurate position.
+Modern devices use a **combination** of these methods to get a more accurate position.
 
-The use of mobile apps is one of the main reasons of the increase in the amount of location data collected, by a wide range of actors. The diversity of sensors inside mobile devices (microphone, camera, infrared, GPS, Bluetooth, accelerometer, Wi-Fi, fingerprint sensor, etc.) makes it easy to collect and combine a wide range of data. This wide range of data can then be combined with other data sources to infer private information about the user. All this data is accessed by apps through APIs provided by the operating system (OS), which also exploits the data for its own purposes.
+The use of **mobile apps** is one of the main reasons of the increase in the amount of location data collected, by a wide range of actors. The **diversity of sensors** inside mobile devices (microphone, camera, infrared, GPS, Bluetooth, accelerometer, Wi-Fi, fingerprint sensor, etc.) makes it easy to collect and combine a wide range of data. This wide range of data can then be combined with other data sources to **infer private information** about the user. All this data is accessed by apps through APIs provided by the **operating system** (OS), which also exploits the data for its own purposes.
 
 ### 2 - European Framework
 
@@ -27,15 +27,15 @@ This means that the processing of location data shall be GDPR compliant as soon 
 
 However, the European legal framework also encompasses the **e-Privacy Directive**, which establishes rules to ensure privacy and personal data protection in the electronic communications sector, making the framework more complex.
 
-The Article 2(c) of the e-Privacy Directive defines location data as:
+The Article 2(c) of the e-Privacy Directive defines **location data** as:
 
-> \[A\]ny data processed in an electronic communications network or by an electronic  communications service, indicating the geographic position of the terminal equipment of a user of a publicly available electronic communications service
+> \[A\]ny data processed in an electronic communications network or by an electronic communications service, indicating the **geographic position** of the terminal equipment of a user of a publicly available electronic communications service
 >
 > *e-Privacy Directive, Article 2(c)*
 
 The Recital 14 the specifies that such data:
 
-> \[M\]ay refer to the latitude, longitude and altitude to the user’s terminal equipment, to the direction of travel, to the level of accuracy of the location information, to the identification of the network cell in which the terminal equipment is located at a certain point in time and to the time the location information was recorded
+> \[M\]ay refer to the *latitude, longitude and altitude* to the user’s terminal equipment, to the *direction of travel*, to the *level of accuracy* of the location information, to the *identification* of the network cell in which the terminal equipment is located at a certain point in time and to the *time* the location information was recorded
 >
 > *e-Privacy Directive, Recital 14*
 
@@ -78,7 +78,7 @@ According to WP29, the use of **geolocation of employees** can find legal basis 
 
 In theses situations, due to the dependency of the employee, the consent is not freely given and is therefore not valid.
 
-In Italy, remote control of employees if it respects employee **freedom** and **dignity** and **avoids excessive, prolonged, and indiscriminate surveillance** (e.g., allowing employees to turn off trackers). It must be negotiated with union representatives first and can only be used for:
+In Italy, remote control of employees must respect employee **freedom** and **dignity** and **avoids excessive, prolonged, and indiscriminate surveillance** (e.g., allowing employees to turn off trackers). It must be negotiated with union representatives first and can only be used for:
 
 * Organisational and production needs
 * Workplace safety
@@ -92,8 +92,7 @@ In France, the CNIL stated that the use of geolocation of employees is limited t
 * Ensure the security of employees and goods
 * Check working hours
 
-It is considered an intrusive measure that requires a prior Data Protection Impact
-Assessment (DPIA), and is forbidden in other cases, such as speed limits of vehicles or collection of data outside working hours.
+It is considered an **intrusive measure** that requires a prior **Data Protection Impact Assessment** (DPIA), and is forbidden in other cases, such as speed limits of vehicles or collection of data outside working hours.
 
 #### 3.2 - Smart Vehicles
 
@@ -103,9 +102,9 @@ The collection of location data shall be **proportionate** to the purposes by mo
 
 #### 3.3 - Contact Tracing
 
-The COVID-19 pandemic has led to the development of Digital Contact Tracing (DCT) apps. These apps use tracking technologies to monitor the simultaneous presence of individuals in the same place. There are two main ways to implement DCT:
+The COVID-19 pandemic has led to the development of **Digital Contact Tracing** (DCT) apps. These apps use tracking technologies to monitor the simultaneous presence of individuals in the same place. There are two main ways to implement DCT:
 
-* Using **proximity data**, usually with Bluetooth Low Energy (BLE) beacons. The absolute position is unknown data is stored locally on the device unless a user is tested positive. This approach was used by Trace Together in Singapore.
+* Using **proximity data**, usually with Bluetooth Low Energy (BLE) beacons. The absolute position is unknown and data is stored locally on the device unless a user is tested positive. This approach was used by Trace Together in Singapore.
 * Using **location data**, usually with GNSS. The absolute position is known, and the data is stored on a central server. This approach was used by WeChat and Alipay in China.
 
 In Europe, the European Commission and the European Data Protection Board (EDPB) have expressed a preference for BLE for privacy reasons. The EDPB also gave criteria for the adoption of DCT apps:
