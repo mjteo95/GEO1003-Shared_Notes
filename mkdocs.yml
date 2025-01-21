@@ -185,9 +185,14 @@ nav:
       - 4 - Competitive Landscape: "content/books/ppp-rtk_market_and_technology_report/4_competitive_landscape.md"
       - 5 - Relevant Standardisation: "content/books/ppp-rtk_market_and_technology_report/5_relevant_standardization.md"
       - 6 - Conclusion: "content/books/ppp-rtk_market_and_technology_report/6_conclusion.md"
+    - RDNAPTRANS:
       - Introduction: "content/books/RDNAPTRANS/introduction.md"
       - 2 Transformation from ETRS89 to RD and NAP: "content/books/RDNAPTRANS/2-transformationETRS89toRD-NAP.md"
       - 3 Transformation from RD and NAP to ETRS89: "content/books/RDNAPTRANS/3-transformationRD-NAPtoETRS89.md"
     - Articles about Indoor Positioning:
       - Meshlium Technical Guide - Smartphone Detection: "content/books/indoor_books/meshlium_smartphone_detection.md"
       - Position Location Place and Area - An Indoor Perspective: "content/books/indoor_books/sithole_position_location_plane_area_indoor.md"
+    - Lectures:
+      - Lecture 1 - Introduction: "content/books/Lectures/lecture1.md"
+      - Unknown Title: "content/books/Lectures/lecture2and3.md"
+      - Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE): "content/books/Lectures/lecture4.md"
