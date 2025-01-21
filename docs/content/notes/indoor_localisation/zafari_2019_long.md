@@ -70,14 +70,13 @@
 
 ## Localisation Technologies
 
-
-| Technology                                    | Range       | Advantages                                                                | Disadvantages                                                                           |
-|-----------------------------------------------|-------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Wifi 802.11 n/ac/ad                           | 35m indoors | Widely available<br>High accuracy<br>Existing infrastructure              | Sensitive to noise<br>Complex processing algorithms needed                              |
-| Wifi 802.11 ah (new)                          | 1km         | High coverage range<br>Low power consumption                              | New technology, not yet tested for indoor environments                                  |
-| Ultrawide Band (UWB)                          | 10-20m      | Immune to interference<br>High accuracy                                   | Short Range<br>Additional hardware<br>High cost                                         |
-| Radio Frequency Indentification Device (RFID) | 200m        | Low power consumption<br>High coverage range                              | Low accuracy                                                                            |
-| Bluetooth                                     | 100m        | High throughput <br>High coverage range<br>Low power consumption          | Low accuracy<br>Sensitive to noise                                                      |
-| Ultrasound                                    | <20m        | Less absorption from obstacles                                            | High dependence on sensor placement                                                     |
-| Acoustics                                     | <2m         | High accuracy                                                             | Niche applications<br>Sensitive to sound pollution<br>Additional hardware/anchor points |
-| Visible Light (LEDs)                          | 1.4km       | Widely available<br>High potential (with AoA technique)<br>Multipath-free | Requires Line-of-Sight<br>Higher power consumption                                      |
+| Technology                                    |  Range | Advantages                                                                | Disadvantages                                                                           |
+|-----------------------------------------------|:------:|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Wifi 802.11 n/ac/ad                           |   35m  | Widely available<br>High accuracy<br>Existing infrastructure              | Sensitive to noise<br>Complex processing algorithms needed                              |
+| Wifi 802.11 ah (new)                          |   1km  | High coverage range<br>Low power consumption                              | New technology, not yet tested for indoor environments                                  |
+| Ultrawide Band (UWB)                          | 10-20m | Immune to interference<br>High accuracy                                   | Short Range<br>Additional hardware<br>High cost                                         |
+| Radio Frequency Indentification Device (RFID) |  200m  | Low power consumption<br>High coverage range                              | Low accuracy                                                                            |
+| Bluetooth                                     |  100m  | High throughput <br>High coverage range<br>Low power consumption          | Low accuracy<br>Sensitive to noise                                                      |
+| Ultrasound                                    |  <20m  | Less absorption from obstacles                                            | High dependence on sensor placement                                                     |
+| Acoustics                                     |   <2m  | High accuracy                                                             | Niche applications<br>Sensitive to sound pollution<br>Additional hardware/anchor points |
+| Visible Light (LEDs)                          |  1.4km | Widely available<br>High potential (with AoA technique)<br>Multipath-free | Requires Line-of-Sight<br>Higher power consumption                                      |
