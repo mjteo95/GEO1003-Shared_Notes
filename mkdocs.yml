@@ -108,6 +108,7 @@ nav:
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics.md"
     - Location awareness and privacy:
+      - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data.md"
       - Spaces: "content/notes/privacy/spaces.md"
       - IndoorGML: "content/notes/privacy/indoorgml.md"
@@ -145,6 +146,7 @@ nav:
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques-long.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics-long.md"
     - Location awareness and privacy:
+      - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area-long.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data-long.md"
       - Spaces: "content/notes/privacy/spaces-long.md"
       - IndoorGML: "content/notes/privacy/indoorgml-long.md"
