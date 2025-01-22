@@ -12,7 +12,7 @@
 - GNSS positioning is influenced by absolute and distance dependent errors
 - DGNSS and local RTK systems can only handle absolute errors– > limited RTK (and DGNSS) range
 - Network RTK models all error sources
-– > Therefor Network RTK (and DGNSS) offers:
+– > Therefore Network RTK (and DGNSS) offers:
 - homogeneous accuracy, reliability and availability
 
 ### 1. Principal GNSS
@@ -20,7 +20,7 @@
 - signal travel time = tst - trec
 - distance = travel time *light speed(3* 10^8 m/s)
 
-![GNSS Constellation](../../../images/lecture4_gnss.png)
+![GNSS Constellation](../../../images/lecture4_gnss.png){ width="400" }
 
 #### Coordinates
 
@@ -49,7 +49,7 @@
 - Multipath: local, sat signal is reflected by the surface before reaching receiver (therefore distance measurement is affected)
 - Receiver clock error
 
-![influence error sources](../../../images/influence_error_sources.png)
+![Influence error sources](../../../images/influence_error_sources.png){ width="350" }
 
 #### Differential GNSS Positioning
 
@@ -64,9 +64,9 @@
    - DGNSS: code observations
    - RTK: carrier phase observations(more accurate real time kinematic)
 5. Distance dependency of DGNSS and RTK: the greater the distance is, the larger the error (the distance between reference and unknown place)  
-   ![RTK_Accuracy](../../../images/RTK_accuracy.png)
+   ![RTK_Accuracy](../../../images/RTK_accuracy.png){ width="400" }
 6. RTK Limitations: if too far from reference, the error is no longer acceptable  
-   ![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png)
+   ![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png){ width="400" }
 7. Network GNSS
    - Better Coverage: multiple reference stations from a network, better coverage than single based station, thus reliable error handling
    - Distance Benefits: overcome distance limitations of single based RTK, interpolate error between reference stations so rover accuracy can be determined
@@ -102,36 +102,30 @@
 
 #### State Space and Observation Space
 
-![state&observation state](../../../images/state_observation_state.png)
+![State and observation state](../../../images/state_observation_state.png){ width="500" }
+
 Explanations: Observation Space：RTK Services: raw measurements from satellites, code ranges, carrier phases, etc. **direct observations**
 State Space: SSR: Proccessed error components, troposhpheric delays, satellite orbits, etc. **error sources and physical models**
 
 #### PPP-RTK
 
-![PPP-RTK](../../../images/PPP-RTK.png)
+![PPP-RTK](../../../images/PPP-RTK.png){ width="400" }
 
 1. Direct OSR
-
-- Base measures satellite distance
-- Direct line-of-sight transmission to rover
-
+   - Base measures satellite distance
+   - Direct line-of-sight transmission to rover
 2. Two-Way OSR
-
-- Rover sends position (GGA)
-- Base returns OSR corrections
-- Two potential error paths
-- Requires mobile network
-
+   - Rover sends position (GGA)
+   - Base returns OSR corrections
+   - Two potential error paths
+   - Requires mobile network
 3. SSR to OSR Conversion
-
-- Rover receives state space data
-- Converts to observation space internally
-
+   - Rover receives state space data
+   - Converts to observation space internally
 4. Pure SSR
-
-- Rover gets satellite data directly
-- Self-improves measurements
-- Independent position determination
+   - Rover gets satellite data directly
+   - Self-improves measurements
+   - Independent position determination
 
 ### 2. Augmentation
 
@@ -149,11 +143,11 @@ State Space: SSR: Proccessed error components, troposhpheric delays, satellite o
 
 #### Augmentation Comparisons
 
-![techniques comparisons](../../../images/techniques_comparison.png)
+![Techniques comparison](../../../images/techniques_comparison.png){ width="400" }
 
 #### PPP and Network_RTK
 
-![PPP and Network RTK](../../../images/PPP-networkRTK.png)
+![PPP and Network RTK](../../../images/PPP-networkRTK.png){ width="300" }
 
 ### 3. Modern GNSS
 
@@ -167,7 +161,7 @@ State Space: SSR: Proccessed error components, troposhpheric delays, satellite o
 - 3rd frequency GPS(L5)
 - Full constellation of Galileo and Beidou
 
-![satellite_system](../../../images/satellite_system.png)
+![Satellite system](../../../images/satellite_system.png){ width="300" }
 
 #### Improvements
 
@@ -177,7 +171,8 @@ State Space: SSR: Proccessed error components, troposhpheric delays, satellite o
 - Speed of initialisation  (more=beter)
 - Accuracy
 - Robustness against solar activities
-**Conclusion**
+
+**Conclusion**:
 
 1. more and larger constellations is better
    - Better Availability

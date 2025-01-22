@@ -82,6 +82,6 @@
 
 ### Answer of the question
 
-![Lecture 1 Question](../../../images/lecture1_quetion.png)
+![Lecture 1 Question](../../../images/lecture1_quetion.png){ width="600" }
 
 > *Donald Duck faces multiple positioning challenges while navigating with an analog map in snowy weather conditions: First, reduced visibility due to snow makes it difficult to identify traditional visual reference points such as road signs and buildings, preventing him from correlating map locations with the actual environment. Second, snow coverage obscures road boundaries and landmarks, further complicating the determination of relative position. Finally, relying solely on an analog map lacks real-time positioning capabilities, unlike modern GNSS systems that provide accurate location information and navigation parameters. These combined factors make it challenging for him to accurately determine his position relative to known reference points.*
