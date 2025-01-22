@@ -15,36 +15,29 @@
 – > Therefor Network RTK (and DGNSS) offers:
 - homogeneous accuracy, reliability and availability
 
-### 1.Principal GNSS
+### 1. Principal GNSS
 
 - signal travel time = tst - trec
 - distance = travel time *light speed(3* 10^8 m/s)
 
 ![GNSS Constellation](../../../images/lecture4_gnss.png)
 
-#### Coordiantes
+#### Coordinates
 
 1. RTK GNSS provides positions in:
-
-- European system (ETRS89)
-- Dutch national grid (RD)
-
+   - European system (ETRS89)
+   - Dutch national grid (RD)
 2. RD system features:
-
-- Used for all objects in Netherlands
-- Uses absolute X-Y coordinates
-- Height measured relative to NAP (Amsterdam Ordnance Datum)
-
+   - Used for all objects in Netherlands
+   - Uses absolute X-Y coordinates
+   - Height measured relative to NAP (Amsterdam Ordnance Datum)
 3. Technical procedures:
-
-- RDNAPTRANS2008™ implemented in GNSS receivers/software
-- Updated to RDNAPTRANS2018™ in October 2022
-
+   - RDNAPTRANS2008™ implemented in GNSS receivers/software
+   - Updated to RDNAPTRANS2018™ in October 2022
 4. ETRS89 and WGS84
-
-- ETRS89 - derivation of WGS84 that is pinned to the European continent (so that it doesn’t change over time)
-- Need to use the same coordinate system for all applications
-- Receiver integrates transformation from ETRS to X,Y
+   - ETRS89 - derivation of WGS84 that is pinned to the European continent (so that it doesn’t change over time)
+   - Need to use the same coordinate system for all applications
+   - Receiver integrates transformation from ETRS to X,Y
 
 #### Error sources
 
@@ -55,6 +48,7 @@
 - Troposphere: temp, humidity and pressure affect signal transmission
 - Multipath: local, sat signal is reflected by the surface before reaching receiver (therefore distance measurement is affected)
 - Receiver clock error
+
 ![influence error sources](../../../images/influence_error_sources.png)
 
 #### Differential GNSS Positioning
@@ -62,25 +56,20 @@
 1. Error Source Determination
    - calculates errors at known pos
    - generate corrections
-2. Correction Transmition
-   - from base station to mobile rover
+2. Correction Transmition: from base station to mobile rover
 3. Apply Corrections
    - rover uses corrections
    - reduces error effects
 4. Position Determination using:
    - DGNSS: code observations
    - RTK: carrier phase observations(more accurate real time kinematic)
-5. Distance dependency of DGNSS and RTK
-   - the greater the distance is, the larger the error (the distance between reference and unknown place)
-![RTK_Accuracy](../../../images/RTK_accuracy.png)
-6. RTK Limitations
-if too far from reference, the error is no longer acceptable
-![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png)
+5. Distance dependency of DGNSS and RTK: the greater the distance is, the larger the error (the distance between reference and unknown place)  
+   ![RTK_Accuracy](../../../images/RTK_accuracy.png)
+6. RTK Limitations: if too far from reference, the error is no longer acceptable  
+   ![RTK: Limit distance dependancy](../../../images/RTK_limit_distance.png)
 7. Network GNSS
-   - Beter Coverage
-     - multiple reference stations from a network, beter coverage than single based station, thus reliable error handling
-   - Distance Benefits
-     - Overcome distance limitations of single based RTK, interpolate error between reference stations so rover accuracy can be determined
+   - Better Coverage: multiple reference stations from a network, better coverage than single based station, thus reliable error handling
+   - Distance Benefits: overcome distance limitations of single based RTK, interpolate error between reference stations so rover accuracy can be determined
 
 #### VRS Representation
 
@@ -177,6 +166,7 @@ State Space: SSR: Proccessed error components, troposhpheric delays, satellite o
 - GPS L2C: beter quality for civil user
 - 3rd frequency GPS(L5)
 - Full constellation of Galileo and Beidou
+
 ![satellite_system](../../../images/satellite_system.png)
 
 #### Improvements
