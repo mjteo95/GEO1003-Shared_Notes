@@ -1,4 +1,4 @@
-## Localisation Techniques
+## Localisation Techniques <br>
 
 ### Received Signal Strength Indicator (RSSI)
 - RSS: actual signal power strength recorded by the receiver, in decibel-milliwatts (dBm) or milliWatts(mW)
@@ -68,8 +68,7 @@
 - Typically used in conjunction with other methods (RSSI, ToF, TDoA) to enhance localisation accuracy
 - High accuracy is only achievable with direct line-of-sight
 
-## Localisation Technologies
-
+## Localisation Technologies <br>
 | Technology                                    |  Range | Advantages                                                                | Disadvantages                                                                           |
 |-----------------------------------------------|:------:|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Wifi 802.11 n/ac/ad                           |   35m  | Widely available<br>High accuracy<br>Existing infrastructure              | Sensitive to noise<br>Complex processing algorithms needed                              |
