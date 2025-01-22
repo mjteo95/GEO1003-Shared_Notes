@@ -32,7 +32,7 @@
 
 #### Segments of GNSS
 
-![GNSS Segments](../../../images/GNSS_segments.png)
+![GNSS Segments](../../../images/GNSS_segments.png){ width="350" }
 
 **How it works?**  
 Generally, The satellites send one-way signals to receiver. By measuring how long these signals take to arrive from at least four satellites, receiver can calculate its exact position on Earth. This is possible because each satellite has an atomic clock and sends a unique identification code (PRN) with its signal
@@ -100,7 +100,7 @@ The quality of satellite geometry and its effect on position accuracy:
 3. HDOP: 2D position quality
 4. VDOP: Height accuracy
 
-![DOP comparion](../../../images/DOP.png)
+![DOP comparion](../../../images/DOP.png){ width="450" }
 
 #### Time to first fix
 
