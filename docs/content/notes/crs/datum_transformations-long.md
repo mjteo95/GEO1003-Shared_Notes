@@ -28,7 +28,6 @@ A big difference between datum transformations and coordinate conversions is tha
 When people in the field of Geomatics are talking about height, they can reference multiple different definitions of height:
 
 * **Geometric**: Ellipsoidal height (max. MSL deviation ±150m)
-
 * **Physical**: Height above the geoid ≈ Mean Sea Level (MSL)
 * **Relative**: Height above ground level (DTM)
 * **Water depth**: Lowest Astronomical Tide (LAT)
@@ -38,9 +37,6 @@ When people in the field of Geomatics are talking about height, they can referen
 There are multiple physical height standards depending on where you want to know the height:
 
 * **International Height Reference Systems** (IHRS) – No realisation yet
-
 * **European Vertical Reference System** (EVRS) – Realisations available, but not widely used yet (dm – cm)
-
 * **Earth Gravitation Model** (EGM84, 96, 2008, 2020) – By USA like WGS84 (m – dm)
-
 * National Height Systems – Based on local MSL
