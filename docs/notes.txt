@@ -31,6 +31,7 @@ content/notes/wifi/radio_based.md
 content/notes/wifi/other_techniques.md
 content/notes/wifi/performance_metrics.md
 content/notes/privacy/title.md
+content/notes/privacy/position_location_place_area.md
 content/notes/privacy/european_data.md
 content/notes/privacy/spaces.md
 content/notes/privacy/indoorgml.md

@@ -90,7 +90,7 @@ nav:
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision.md"
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity.md"
-      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk.md"
+      - PPP & RTK: "content/notes/gnss_performance/ppp_rtk.md"
       - DGNSS: "content/notes/gnss_performance/dgnss.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath.md"
@@ -108,6 +108,7 @@ nav:
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics.md"
     - Location awareness and privacy:
+      - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data.md"
       - Spaces: "content/notes/privacy/spaces.md"
       - IndoorGML: "content/notes/privacy/indoorgml.md"
@@ -127,7 +128,7 @@ nav:
       - Accuracy and Precision: "content/notes/gnss_performance/accuracy_precision-long.md"
       - Dilution of Precision: "content/notes/gnss_performance/dilution_of_precision-long.md"
       - Availability, Continuity and Integrity: "content/notes/gnss_performance/availability_continuity_integrity-long.md"
-      - PPP-RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
+      - PPP & RTK: "content/notes/gnss_performance/ppp_rtk-long.md"
       - DGNSS: "content/notes/gnss_performance/dgnss-long.md"
     - GNSS in the built environment (outdoor, indoor and in between):
       - Multipath: "content/notes/gnss_built_environment/multipath-long.md"
@@ -145,6 +146,7 @@ nav:
       - Hybrid and Other Techniques: "content/notes/wifi/other_techniques-long.md"
       - Performance Metrics: "content/notes/wifi/performance_metrics-long.md"
     - Location awareness and privacy:
+      - Position, Location, Place and Area: "content/notes/privacy/position_location_place_area-long.md"
       - Personal Data Protection in the European Union: "content/notes/privacy/european_data-long.md"
       - Spaces: "content/notes/privacy/spaces-long.md"
       - IndoorGML: "content/notes/privacy/indoorgml-long.md"
@@ -187,6 +189,6 @@ nav:
       - Location Data and Privacy: "content/books/privacy_books/gambino_location_data_and_privacy.md"
       - Personal Data, Non-personal Data, Anonymised Data, Pseudonymised Data, De-identified Data: "content/books/privacy_books/irti_personal_data_etc.md"
     - Lectures:
-      - Lecture 1 - Introduction: "content/books/Lectures/lecture1.md"
-      - Unknown Title: "content/books/Lectures/lecture2and3.md"
-      - Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE): "content/books/Lectures/lecture4.md"
+      - Lecture 1 - Introduction: "content/books/Lectures/lecture_1.md"
+      - Lecture 2 + 3： GNSS Code Code-Observation Positioning Performance for the built environment Part 1 + 2: "content/books/Lectures/lecture_2_and_3.md"
+      - Lecture 4 - Network RTK, GNSS Augmentation, GNSS Modernization (GUEST LECTURE): "content/books/Lectures/lecture_4.md"

@@ -19,6 +19,8 @@ Where
 - $\sigma_{E}^2$, $\sigma_{N}^2$, $\sigma_{U}^2$ are the East, North and Up variance components of receiver position estimate 
 - $\sigma_{T}^2$ is Variance of receiver clock offset estimate
 
+If DOP is very high, the inaccuracy of the computed position will be much larger than the inaccuracy of the range measurement
+
 Types of DOP:
 - GDOP (Geometric Dilution of Precision)
   - Amplifies pseudorange error of the position determination
