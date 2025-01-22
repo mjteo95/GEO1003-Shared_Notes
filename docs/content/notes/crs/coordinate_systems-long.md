@@ -47,12 +47,12 @@ The use of Geographic Coordinate Reference Systems is very common. They use degr
 
 Using the geographic coordinate system, we have a grid of lines dividing the earth into squares that cover approximately 12363.365 square kilometres at the equator — a good start, but not very useful for determining the location of anything within that square. To be truly useful, a map grid must be divided into small enough sections so that they can be used to describe (with an acceptable level of accuracy) the location of a point on the map. To accomplish this, degrees are divided into **minutes** (') and **seconds** ("). There are sixty minutes in a degree, and sixty seconds in a minute (3600 seconds in a degree). So, at the equator, one second of latitude or longitude = 30.87624 meters.
 
-![Fundamentals of a Geographic coordinate system](../../../images/Geographic_coordinates.png){width:"50%"}
+![Fundamentals of a Geographic coordinate system](../../../images/Geographic_coordinates.png){width="300"}
 
 ### Projected Coordinate Reference Systems
 
 There is a difference between a geographic coordinate system (GCS) and a projected coordinate system (PCS). In short, a GCS defines **where** the data is located on the earth’s surface; a PCS tells the data **how** to draw on a flat surface. A GCS is round, and so records locations in angular units (usually degrees). A PCS is flat, so it records locations in linear units (usually meters).
-![Geographic coordinate systems vs Projected coordinate system](../../../images/PCS_vs_GCS.png){width:"50%"}
+![Geographic coordinate systems vs Projected coordinate system](../../../images/PCS_vs_GCS.png){width="400"}
 
 The GCS is what ties your coordinate values to real locations on the earth. Only knowing the latitude and longitude of a location is thus not good enough, as it only tells you where a location is within a GCS. To draw a graticule, you need a model of the earth that is at least a regular spheroid, if not a perfect sphere. There are many different models of the earth’s surface, and therefore many different GCS!
 
@@ -76,7 +76,7 @@ Coordinates in a GCS are recorded in an Angular Unit, usually degrees. The **Pri
 
 >For example, most road centreline feature classes are segmented where three or more road segments intersect and where the road names change.
 
-![Hectometre marker](../../../images/Hectometre_marker.png){width:"50%"}
+![Hectometre marker](../../../images/Hectometre_marker.png){width="200"}
 
 Great examples of Linear Reference Systems are the Dutch **hectometre markers**. As the name suggests, Dutch hectometre markers are spaced at 100-metre intervals. In addition to showing the motorway number and location, they also bear a **carriageway identifier** – Li for Links (Left) and Re for Rechts (Right). The carriageways are identified as being left-hand and right-hand as viewed by somebody looking in the direction of increasing location numbers. By and large, Dutch location numbers increase as one moves away from Amsterdam, or in the case of roads that do not originate in Amsterdam, location numbers increase as one moves eastwards away from the North Sea.
 

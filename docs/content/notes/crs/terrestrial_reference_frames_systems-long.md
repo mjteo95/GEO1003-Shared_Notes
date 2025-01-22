@@ -2,7 +2,7 @@
 
 In this chapter of the summary, we will highlight some examples of Coordinate Reference Systems and Frames:
 
-![Terrestrial Reference Systems](../../../images/GGRF.png){width:"50%"}
+![Terrestrial Reference Systems](../../../images/GGRF.png){width="300"}
 
 **ITRS: International Terrestrial Reference System** uses the GRS80 ellipsoid, with as its origin the centre of mass of the Earth. Greenwich (UK) is used as a meridian. When using time-dependent coordinates, you always need to specify the epoch (e.g. @2024.91).
 
@@ -17,7 +17,7 @@ In this chapter of the summary, we will highlight some examples of Coordinate Re
 * Newly added and discontinued stations,
 
 * Occasionally a new reference epoch $t$0.
-![Changes in ITRF2014](../../../images/Horizontal_velocity_field_ITRF2014.png){width:"50%"}
+![Changes in ITRF2014](../../../images/Horizontal_velocity_field_ITRF2014.png){width="450"}
 
 **WGS 84** is aligned with ITRS (WGS 84-G2296 (2024) = ITRF2020). For time-dependent coordinates, however, it has limited precision. The realisations (frames) often have differences between m – cm. The ensemble code (+- 2m): EPSG:4326 for 2D (often used as unknown latlon).
 
